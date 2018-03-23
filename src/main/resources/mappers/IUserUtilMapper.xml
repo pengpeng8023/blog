@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.blog.server.mapper.IUserUtilMapper">
+    <resultMap id="UserBo" type="com.study.blog.server.bo.UserBo">
+        <result column="ACCOUNT_NO" property="accountNo"></result>
+        <result column="ACCOUNT_NAME" property="accountName"></result>
+        <result column="ACCOUNT_PHONE" property="accountPhone"></result>
+        <result column="USER_NO" property="userNo"></result>
+        <result column="USER_NAME" property="userName"></result>
+        <result column="ACCOUNT_EMAIL" property="accountEmail"></result>
+        <result column="ACCOUNT_ROLE_NO" property="accountRoleNo"></result>
+        <result column="ACCOUNT_ROLE_Name" property="accountRoleName"></result>
+    </resultMap>
+    <select id="getUserBo" resultMap="UserBo" parameterType="String">
+      SELECT
+          a.ACCOUNT_NO,
+          a.ACCOUNT_NAME,
+          A.ACCOUNT_EMAIL,
+          A.ACCOUNT_PHONE,
+          A.ACCOUNT_ROLE account_role_no,
+          (CASE
+            WHEN A.ACCOUNT_ROLE = '0'
+            THEN '用户'
+            WHEN A.ACCOUNT_ROLE = '1'
+            THEN '管理员'
+            ELSE '游客'
+          END) ACCOUNT_ROLE_NAME,
+          B.USER_NO,
+          B.USER_NAME
+        FROM
+          p_account a,
+          p_user_info b
+        WHERE a.account_no = B.account_no
+          AND UPPER(A.ACCOUNT_NO) = UPPER(#{accountNo,jdbcType=VARCHAR})
+    </select>
+    <insert id="insertUserBo" >
+        INSERT INTO p_user_info(user_no,account_no,user_name) VALUES(#{userNo,jdbcType=VARCHAR},
+        #{accountNo,jdbcType=VARCHAR},#{userName,jdbcType=VARCHAR})
+    </insert>
+</mapper>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta env="tag" http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta env="tag" http-equiv="pragma" content="no-cache" />
+    <meta env="tag" http-equiv="Cache-Control" content="no-store" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title env="tag">服务测试</title>
+</head>
+<body>
+<button onclick="test()">测试</button>
+<div id="info"></div>
+</body>
+<script type="text/javascript" src="/staticfile/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    var json = JSON.stringify({eleNo:"TEST-01"});
+    function test(){
+        $.ajax({
+            type: "post",
+            contentType: "application/json",
+            url: "http://localhost:8090/blog/invokeWebService/getTest",
+            data: json,
+            dataType: "json",
+            success: function(data){
+                $("#info").html(JSON.stringify(data));
+                console.log("返回结果："+JSON.stringify(data));
+            }
+        });
+    }
+</script>
+</html>

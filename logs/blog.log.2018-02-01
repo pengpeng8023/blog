@@ -1,0 +1,24 @@
+[restartedMain][INFO ]2018-02-01 09:56:02.045 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-01 09:56:02.048 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-01 09:56:07.277 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-01 09:56:11.395 [SpringbootApplication.logStarted] - Started SpringbootApplication in 10.326 seconds (JVM running for 11.772)
+[http-nio-8090-exec-1][INFO ]2018-02-01 09:56:19.781 [TestController.toLogin] - ----------verifyCode: 4M3Q
+[restartedMain][INFO ]2018-02-01 09:56:21.362 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-01 09:56:21.363 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-01 09:56:22.858 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-01 09:56:23.950 [SpringbootApplication.logStarted] - Started SpringbootApplication in 2.649 seconds (JVM running for 24.327)
+[http-nio-8090-exec-2][INFO ]2018-02-01 09:57:18.289 [AuthImage.service] - ----------verifyCode: JQXU
+[http-nio-8090-exec-4][INFO ]2018-02-01 09:57:22.486 [AuthImage.service] - ----------verifyCode: MA8E
+[http-nio-8090-exec-6][INFO ]2018-02-01 09:57:24.310 [AuthImage.service] - ----------verifyCode: VXLJ
+[http-nio-8090-exec-8][INFO ]2018-02-01 09:58:21.753 [AuthImage.service] - ----------verifyCode: YS5D
+[http-nio-8090-exec-10][INFO ]2018-02-01 09:58:25.698 [AuthImage.service] - ----------verifyCode: U2AT
+[http-nio-8090-exec-1][INFO ]2018-02-01 09:58:28.052 [AuthImage.service] - ----------verifyCode: K6DM
+[http-nio-8090-exec-2][INFO ]2018-02-01 09:58:31.789 [TestController.toLogin] - ----------verifyCode: 6VC3
+[restartedMain][INFO ]2018-02-01 09:58:33.777 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-01 09:58:33.777 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-01 09:58:35.294 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-01 09:58:36.152 [SpringbootApplication.logStarted] - Started SpringbootApplication in 2.426 seconds (JVM running for 156.529)
+[restartedMain][INFO ]2018-02-01 16:00:00.527 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-01 16:00:00.527 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-01 16:00:03.525 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-01 16:00:06.555 [SpringbootApplication.logStarted] - Started SpringbootApplication in 6.281 seconds (JVM running for 21846.932)

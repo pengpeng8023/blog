@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.blog.server.mapper.IBlogServerMapper">
+    <resultMap id="serverConfigMap"
+               type="com.study.blog.server.bo.ServerConfigBo">
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="server_type" property="serverType" jdbcType="VARCHAR" />
+        <result column="ws_param_type" property="wsParamType" jdbcType="VARCHAR" />
+        <result column="class_path" property="classPath" jdbcType="VARCHAR" />
+        <result column="class_func" property="classFunc" jdbcType="VARCHAR" />
+        <result column="class_func_desc" property="classFuncDesc"
+                jdbcType="VARCHAR" />
+        <result column="extend1" property="extend1" jdbcType="VARCHAR" />
+    </resultMap>
+    <resultMap id="cursorMap" type="java.util.HashMap">
+
+        <result column="data1" property="data1" jdbcType="VARCHAR" />
+        <result column="data2" property="data2" jdbcType="VARCHAR" />
+        <result column="data3" property="data3" jdbcType="VARCHAR" />
+        <result column="data4" property="data4" jdbcType="VARCHAR" />
+        <result column="data5" property="data5" jdbcType="VARCHAR" />
+        <result column="data6" property="data6" jdbcType="VARCHAR" />
+        <result column="data7" property="data7" jdbcType="VARCHAR" />
+        <result column="data8" property="data8" jdbcType="VARCHAR" />
+        <result column="data9" property="data9" jdbcType="VARCHAR" />
+        <result column="data10" property="data10" jdbcType="VARCHAR" />
+        <result column="data11" property="data11" jdbcType="VARCHAR" />
+        <result column="data12" property="data12" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <resultMap id="sqlConfigMap" type="java.util.HashMap">
+
+        <result column="ID" property="id" jdbcType="INTEGER" />
+        <result column="SCENCE_CODE" property="scenceCode" jdbcType="VARCHAR" />
+        <result column="ELE_NO" property="eleNo" jdbcType="VARCHAR" />
+        <result column="ELE_NAME" property="eleName" jdbcType="VARCHAR" />
+        <result column="SQL" property="sql" jdbcType="VARCHAR" />
+        <result column="PARAM_NAME" property="paramName" jdbcType="VARCHAR" />
+        <result column="SQL_TYPE" property="sqlType" jdbcType="VARCHAR" />
+    </resultMap>
+    <select id="getSqlConfig" resultMap="sqlConfigMap">
+        SELECT * FROM blog.p_sql_config a where a.ele_no = #{eleNo,jdbcType=VARCHAR}
+    </select>
+    <select id="getServiceConfig" parameterType="string" resultMap="serverConfigMap">
+        select id,ws_param_type,server_type,class_path,class_func,class_func_desc,extend1
+          from blog.p_server_config t
+         where t.CLASS_FUNC = #{method, jdbcType=VARCHAR}
+    </select>
+    <select id="execSqlWithSelect" parameterType="java.util.HashMap"
+            resultType="java.util.HashMap">
+        ${sql}
+    </select>
+    <select id="execSqlWithProc" parameterType="java.util.HashMap"
+            statementType="CALLABLE">
+        ${sql}
+    </select>
+
+    <insert id="execSqlWithInsert" parameterType="java.util.HashMap">
+        ${sql}
+    </insert>
+
+    <update id="execSqlWithUpdate" parameterType="java.util.HashMap">
+        ${sql}
+    </update>
+
+    <delete id="execSqlWithDelete" parameterType="java.util.HashMap">
+        ${sql}
+    </delete>
+</mapper>

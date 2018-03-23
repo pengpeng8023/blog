@@ -1,0 +1,31 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/blog
+  mvc:
+    view:
+      prefix: /page/
+      suffix: .html
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/staticfile/
+    cache-period: 0
+  http:
+      encoding:
+        force: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    pool:
+      max-idle: 100
+      min-idle: 1
+      max-active: 1000
+      max-wait: -1
+mybatis:
+  type-aliases-package: com.study.blog.*.bo
+  config-location: classpath:/mybatis-config.xml
+  mapper-locations: classpath:/mappers/**

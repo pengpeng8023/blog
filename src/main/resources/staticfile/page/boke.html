@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="../element-ui/lib/theme-chalk/index.css" />
+		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/components.css"/>
+		<link rel="stylesheet" href="../css/boke.css"/>
+		<title>博客</title>
+
+	</head>
+
+	<body>
+		<div id="app">
+			<el-container>
+				<el-header >
+					<object data="header.html" style="width: 100%;height: 66px;display: block;"></object>
+				</el-header>
+				<el-container>
+
+
+						<el-header height="50px">
+							<div class="search-condition">
+								<el-input placeholder="请输入内容" v-model="input5" class="input-with-select">
+									<el-button slot="append" icon="el-icon-search" @click="showValue"></el-button>
+								</el-input>
+							</div>
+							<div class="search-condition">
+								<el-date-picker v-model="value7" type="daterange" align="right" unlink-panels range-separator="至" start-placeholder="开始日期" end-placeholder="结束日期" :picker-options="pickerOptions2">
+								</el-date-picker>
+							</div>
+						</el-header>
+					<el-container>
+						<el-aside width="250px">
+							<show-tree></show-tree>
+						</el-aside>
+						<el-main height="640px">
+
+							<el-table :data="tableData" stripe border  style="width: 100%;height: 600px;" @selection-change="handleSelectionChange">
+								<el-table-column type="selection" width="55">
+								</el-table-column>
+								<el-table-column label="编号" width="100">
+									<template slot-scope="scope">
+										<span style="margin-left: 10px">{{ scope.row.NOTE_NO }}</span>
+									</template>
+								</el-table-column>
+								<el-table-column label="创建日期" width="180">
+									<template slot-scope="scope">
+										<i class="el-icon-time"></i>
+										<span style="margin-left: 10px">{{ scope.row.CREATE_TIME }}</span>
+									</template>
+								</el-table-column>
+								<el-table-column label="创建人" width="180">
+									<template slot-scope="scope">
+										<el-popover trigger="hover" placement="top">
+											<p>用户编号: {{ scope.row.USER_NO }}</p>
+											<p>用户电话: {{ scope.row.ACCOUNT_PHONE }}</p>
+											<p>用户邮箱: {{ scope.row.ACCOUNT_EMAIL }}</p>
+											<div slot="reference" class="name-wrapper">
+												<el-tag size="medium">{{ scope.row.CREATE_NAME }}</el-tag>
+											</div>
+										</el-popover>
+									</template>
+								</el-table-column>
+								<el-table-column label="日记类型" width="100">
+									<template slot-scope="scope">
+										<span style="margin-left: 10px">{{ scope.row.NOTE_TYPE }}</span>
+									</template>
+								</el-table-column>
+								<el-table-column label="标题" width="">
+									<template slot-scope="scope">
+										<span style="margin-left: 10px">{{ scope.row.NOTE_TITLE }}</span>
+									</template>
+								</el-table-column>
+								<el-table-column label="操作" width="150">
+									<template slot-scope="scope">
+										<el-button size="mini" @click="showDialogFormVisible('2',scope.$index, scope.row)">编辑</el-button>
+										<el-button size="mini" type="danger" @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+									</template>
+
+								</el-table-column>
+							</el-table>
+							<el-row :gutter="20">
+								<el-col :span="6" :offset="16">
+									<div>
+										<el-pagination background @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page="pageNum" :page-sizes="[10, 20, 50, 100]" :page-size="pageSize" layout="total, sizes, prev, pager, next, jumper" :total="totalNum">
+										</el-pagination>
+									</div>
+								</el-col>
+								<el-col :span="2">
+									<div  class="p_add_type_div">
+										<el-button size="small" @click="showDialogFormVisible('1')">新增</el-button>
+									</div>
+								</el-col>
+							</el-row>
+							<el-dialog title="日记信息" :visible.sync="dialogFormVisible" width="80%">
+								<el-form >
+									<el-form-item label="类型" :label-width="formLabelWidth">
+										<el-input @focus="showTypeTree" v-model="dialog.noteTypeName"></el-input>
+									</el-form-item>
+									<el-form-item label="标题" :label-width="formLabelWidth">
+										<el-input v-model="dialog.noteTitle" placeholder="标题"></el-input>
+									</el-form-item>
+									<el-form-item label="内容 : " :label-width="formLabelWidth">
+										<my-vue-editor :content="dialog.noteContain" @change="ctnUpdate"></my-vue-editor>
+									</el-form-item>
+								</el-form>
+								<div slot="footer" class="dialog-footer">
+									<el-button @click="closeDialogFormVisible">取 消</el-button>
+									<el-button type="primary" @click="saveNoteManage">确 定</el-button>
+								</div>
+							</el-dialog>
+						</el-main>
+					</el-container>
+				</el-container>
+				<el-footer height="50px">Copyright © 2017-forever 彭鹏 版权所有</el-footer>
+			</el-container>
+			<type-tree :show-dialog="dialogVisible" :type-code="typeCode"  @tree-sures="treeOk" @dv="changeDV" ></type-tree>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/vue.js"></script>
+	<script type="text/javascript" src="../element-ui/lib/index.js"></script>
+	<script type="text/javascript" src="../js/my-vue-editor.js"></script>
+	<script type="text/javascript" src="../js/api.js"></script>
+	<script type="text/javascript" src="../js/frame.js"></script>
+	<script type="text/javascript" src="../js/typeTree.js"></script>
+	<script type="text/javascript" src="../js/tree.js"></script>
+	<script>
+		let editorConfig = {
+			modules: [
+				'font',
+				'foreColor',
+				'bold',
+				'italic',
+				'underline',
+				'linethrough',
+				'ul',
+				'ol',
+				'indent',
+				'outdent',
+				'align',
+				'image',
+				'quote',
+				'todo'
+			]
+		}
+		Vue.use(myVueEditor, editorConfig)
+
+		var item = {
+		    ACCOUNT_PHONE:'SADA',
+			ACCOUNT_EMAIL:'ASDASD',
+			USER_NO: '12321321',
+			CREATE_NAME: '王小虎',
+			NOTE_TITLE: '上海市普陀区金沙江路1518弄',
+			NOTE_NO: '12',
+			NOTE_TYPE: '01',
+			CREATE_TIME: '2016-05-02'
+		};
+		var pageSize = 10;
+		new Vue({
+			el: '#app',
+			data: function() {
+				return {
+					visible: "false",
+					input5: '',
+					value1: '',
+					tableData: Array(pageSize).fill(item),
+                    pageNum: 1,
+					pageSize:10,
+					totalNum:1,
+					noteType:'',
+					searchText:'',
+					startTime:'',
+					endTime:'',
+					value7: [new Date() - 7, new Date()],
+					pickerOptions2: {
+						shortcuts: [{
+							text: '最近一周',
+							onClick(picker) {
+								const end = new Date();
+								const start = new Date();
+								start.setTime(start.getTime() - 3600 * 1000 * 24 * 7);
+								picker.$emit('pick', [start, end]);
+							}
+						}, {
+							text: '最近一个月',
+							onClick(picker) {
+								const end = new Date();
+								const start = new Date();
+								start.setTime(start.getTime() - 3600 * 1000 * 24 * 30);
+								picker.$emit('pick', [start, end]);
+							}
+						}, {
+							text: '最近三个月',
+							onClick(picker) {
+								const end = new Date();
+								const start = new Date();
+								start.setTime(start.getTime() - 3600 * 1000 * 24 * 90);
+								picker.$emit('pick', [start, end]);
+							}
+						}]
+					},
+					dialogFormVisible: false,
+					formLabelWidth: '60px',
+                    dialogVisible : false,
+					dialog:{
+					    noteTypeName:'',
+						noteTypeNo:'',
+						noteNo:'',
+						noteTitle:'',
+						noteContain:'',
+						noteFlag:'1'
+					},
+                    typeCode:'000',
+
+				}
+			},
+			methods: {
+                treeOk:function(msg){
+                    this.dialog.noteTypeName = msg.name;
+                    this.dialog.noteTypeNo = msg.code;
+                },
+                changeDV:function(p){
+                    this.dialogVisible = p;
+                },
+				showValue: function(value) {
+					console.log(value);
+				},
+				/*handleEdit: function(index, row) {
+					console.log(index, row);
+				},*/
+				handleDelete: function(index, row) {
+					console.log(index, row);
+				},
+				toggleSelection: function(rows) {
+					if(rows) {
+						rows.forEach(row => {
+							this.$refs.multipleTable.toggleRowSelection(row);
+						});
+					} else {
+						this.$refs.multipleTable.clearSelection();
+					}
+				},
+				handleSelectionChange: function(val) {
+					this.multipleSelection = val;
+				},
+				handleSizeChange: function(val) {
+					console.log(`每页 ${val} 条`);
+					this.pageNum = val;
+				},
+				handleCurrentChange: function(val) {
+					console.log(`当前页: ${val}`);
+                    this.pageSize = val;
+				},
+				ctnUpdate: function(data) {
+                    this.dialog.noteContain = data
+				},
+				showDialogFormVisible: function(type,index,row) {
+				    var _this = this;
+				    if(type == '2'){
+                        invocationMode('get',API.GETNOTEMANAGE,'json',{noteNo:row.NOTE_NO},function (data) {
+                            console.log(data);
+                            _this.dialog.noteTypeName=data.data[0].TYPE_NAME;
+							_this.dialog.noteTypeNo=data.data[0].NOTE_TYPE;
+							_this.dialog.noteTitle=data.data[0].NOTE_TITLE;
+							_this.dialog.noteContain=data.data[0].NOTE_CONTAIN;
+							_this.dialog.noteNo = row.NOTE_NO;
+                            _this.dialog.noteFlag = type;
+                            _this.dialogFormVisible = true;
+                            console.log('开始' + _this.dialog.noteContain);
+                        })
+
+                    }else{
+                        _this.dialog.noteFlag = type;
+                        _this.dialogFormVisible = true;
+                        console.log('开始' + _this.dialog.noteContain);
+					}
+
+				},
+				closeDialogFormVisible: function() {
+					this.dialogFormVisible = false;
+					console.log('结束' + this.dialog.noteContain);
+                    console.log('结束' + this.dialog.noteTypeName);
+                    console.log('结束' + this.dialog.noteTitle);
+					this.dialog.noteContain = '';
+					this.dialog.noteTypeName = '';
+					this.dialog.noteTypeNo = '';
+					this.dialog.noteTitle = '';
+					this.dialog.noteNo = '';
+					this.dialog.noteFlag = '1';
+				},
+                showTypeTree:function(){
+					this.dialogVisible = true;
+				},
+				saveNoteManage:function () {
+                    var _this = this;
+                    var params = {};
+                    params.noteNo = _this.dialog.noteNo;
+                    params.noteTitle = _this.dialog.noteTitle;
+                    params.noteContain = _this.dialog.noteContain;
+                    params.noteTypeNo = _this.dialog.noteTypeNo;
+                    if(_this.dialog.noteFlag == '1'){
+                        invocationMode('get',API.SAVENOTEMANAGE,'json',params,function (data) {
+                            _this.closeDialogFormVisible();
+                        })
+					}else{
+                        invocationMode('get',API.UPDATENOTEMANAGE,'json',params,function (data) {
+                            _this.closeDialogFormVisible();
+                        })
+
+                    }
+                },
+				getGirdData:function () {
+                    var _this = this;
+                    var params = {};
+                    params.startNum = (_this.pageNum-1)*_this.pageSize;
+                    params.pageSize= _this.pageSize;
+                    params.startTime = _this.startTime;
+                    params.endTime = _this.endTime;
+                    params.noteType = _this.noteType;
+                    params.searchText = _this.searchText;
+                    invocationMode('get',API.GETGIRDDATA,'json',params,function (data) {
+                        console.log(data);
+                        _this.tableData = data.data;
+                        _this.totalNum = data.data[0].totalNum;
+
+                    })
+                }
+			},
+            created:function(){
+                this.getGirdData();
+			}
+		})
+	</script>
+
+</html>

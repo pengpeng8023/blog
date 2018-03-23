@@ -1,0 +1,707 @@
+2018-03-23-11-14 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-15 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-15 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-15 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-15 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-15 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-15 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-15 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-15 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-15 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-18 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-18 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-18 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-18 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-18 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-19 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-19 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-19 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-19 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-20 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-23 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-23 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-23 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-23 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-23 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-24 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-24 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-24 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-24 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-24 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-25 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-25 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-25 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-25 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-25 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-28 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-28 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-28 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-28 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-28 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-30 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-30 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-30 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-30 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-30 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-31 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-31 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-31 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-31 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-31 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-33 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-34 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-34 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-34 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-34 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-34 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-34 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-37 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-38 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-38 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-38 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-38 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-38 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-42 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-42 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-42 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-42 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-42 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-43 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-43 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-43 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-43 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-11-43 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-11-43 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-11-44 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-14-28 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-28 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-28 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-28 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-28 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-14-30 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-30 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-30 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-30 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-30 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-14-31 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-31 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-31 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-31 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-31 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-14-31 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-31 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-36 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-36 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-36 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-36 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-36 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-14-36 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-36 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-36 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-36 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-39 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-39 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-39 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-39 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-39 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-14-39 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-39 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-39 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-39 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-39 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-39 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-40 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-40 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-41 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-41 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-41 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-41 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-41 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-14-42 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-42 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-42 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-42 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-42 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-14-44 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-44 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-44 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-44 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-44 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-14-44 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-44 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-44 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-44 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-44 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-14-45 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-45 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-45 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-45 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-47 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-47 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-47 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-47 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-47 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-14-47 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-47 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-47 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-47 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-47 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-47 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-55 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-55 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-55 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-55 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-55 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-14-56 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-56 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-56 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-14-56 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-14-56 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-14 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-14 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-14 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-14 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-14 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-15 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-15 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-15 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-15 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-15 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-16 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-15-16 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-15-16 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-16 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-16 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-16 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-16 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-16 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-15-16 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-15-16 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-16 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-16 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-16 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-17 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-17 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-15-17 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-15-17 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-17 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-17 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-17 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-17 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-18 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-15-18 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-15-18 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-18 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-18 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-18 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-18 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-19 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-15-19 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-15-19 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-19 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-19 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-19 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-19 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-19 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteManage config get from cache failure , get from database
+  2018-03-23-15-19 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-001 config get from cache failure , get from database
+  2018-03-23-15-27 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-15-27 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-15-27 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-27 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-27 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-27 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-27 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-28 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-15-28 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-15-28 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-28 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-28 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-28 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-28 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-28 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteManage config get from cache failure , get from database
+  2018-03-23-15-28 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-001 config get from cache failure , get from database
+  2018-03-23-15-29 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteManage config get from cache failure , get from database
+  2018-03-23-15-29 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-001 config get from cache failure , get from database
+  2018-03-23-15-30 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-15-30 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-15-30 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-30 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-30 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-30 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-30 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-31 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-15-31 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-15-31 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-31 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-31 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-31 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-31 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-31 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteManage config get from cache failure , get from database
+  2018-03-23-15-31 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-001 config get from cache failure , get from database
+  2018-03-23-15-32 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-15-32 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-15-32 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-32 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-32 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-32 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-32 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-32 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteManage config get from cache failure , get from database
+  2018-03-23-15-32 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-001 config get from cache failure , get from database
+  2018-03-23-15-33 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-15-33 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-15-33 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-33 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-33 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-33 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-33 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-33 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-15-33 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-15-33 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-33 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-33 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-33 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-34 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-15-34 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-15-34 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-34 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-34 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-34 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-34 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-34 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteManage config get from cache failure , get from database
+  2018-03-23-15-34 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-001 config get from cache failure , get from database
+  2018-03-23-15-46 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-15-46 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-15-46 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-46 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-46 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-46 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-47 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-48 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-15-48 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-15-48 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-48 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-48 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-15-48 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-15-48 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-15-48 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteManage config get from cache failure , get from database
+  2018-03-23-15-48 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-001 config get from cache failure , get from database
+  2018-03-23-16-03 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-03 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-03 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-03 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-03 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-03 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-03 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-03 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteManage config get from cache failure , get from database
+  2018-03-23-16-03 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-001 config get from cache failure , get from database
+  2018-03-23-16-03 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 9
+### The error may exist in file [E:\software\ideaWorkSpace\blog\target\classes\mappers\IBlogServerMapper.xml]
+### The error may involve com.study.blog.server.mapper.IBlogServerMapper.execSqlWithSelect-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE     p_note_manage   SET    NOTE_TITLE = ?,    NOTE_CONTAIN = ?,    UPDATE_TIME = NOW(),    NOTE_TYPE = ?,    data_oper_type = 'U'   WHERE NOTE_NO = ?,
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 9
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 9
+  2018-03-23-16-04 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteManage config get from cache failure , get from database
+  2018-03-23-16-04 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-001 config get from cache failure , get from database
+  2018-03-23-16-05 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-05 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-05 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-05 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-05 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-05 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-05 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-05 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteManage config get from cache failure , get from database
+  2018-03-23-16-05 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-001 config get from cache failure , get from database
+  2018-03-23-16-05 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - updateNoteManage config get from cache failure , get from database
+  2018-03-23-16-05 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-004 config get from cache failure , get from database
+  2018-03-23-16-05 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 9
+### The error may exist in file [E:\software\ideaWorkSpace\blog\target\classes\mappers\IBlogServerMapper.xml]
+### The error may involve com.study.blog.server.mapper.IBlogServerMapper.execSqlWithSelect-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE     p_note_manage   SET    NOTE_TITLE = ?,    NOTE_CONTAIN = ?,    UPDATE_TIME = NOW(),    NOTE_TYPE = ?,    data_oper_type = 'U'   WHERE NOTE_NO = ?,
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 9
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 9
+  2018-03-23-16-06 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-06 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-07 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteManage config get from cache failure , get from database
+  2018-03-23-16-07 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-001 config get from cache failure , get from database
+  2018-03-23-16-07 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - updateNoteManage config get from cache failure , get from database
+  2018-03-23-16-07 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-004 config get from cache failure , get from database
+  2018-03-23-16-08 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-08 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-08 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-08 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-08 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-08 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-08 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-08 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-08 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-09 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-09 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-09 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-09 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-09 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-09 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-09 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - saveNoteManage config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-003 config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-10 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - saveNoteManage config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-003 config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-11 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-12 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteManage config get from cache failure , get from database
+  2018-03-23-16-12 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-001 config get from cache failure , get from database
+  2018-03-23-16-13 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-13 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-13 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-13 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-13 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-13 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-13 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-13 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - saveNoteManage config get from cache failure , get from database
+  2018-03-23-16-13 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-003 config get from cache failure , get from database
+  2018-03-23-16-13 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteManage config get from cache failure , get from database
+  2018-03-23-16-13 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-001 config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - saveNoteManage config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-003 config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - saveNoteManage config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-003 config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - saveNoteManage config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-003 config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - saveNoteManage config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-003 config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - saveNoteManage config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-003 config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - saveNoteManage config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-003 config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-14 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-15 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - saveNoteManage config get from cache failure , get from database
+  2018-03-23-16-15 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-003 config get from cache failure , get from database
+  2018-03-23-16-15 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-15 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-15 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-15 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-15 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-15 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-15 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-15 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-15 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-15 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-15 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-15 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-15 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-17 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-18 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-28 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-28 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-28 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+### The error may exist in file [E:\software\ideaWorkSpace\blog\target\classes\mappers\IBlogServerMapper.xml]
+### The error may involve com.study.blog.server.mapper.IBlogServerMapper.execSqlWithSelect-Inline
+### The error occurred while setting parameters
+### SQL: SELECT t.*,k.totalNum FROM (SELECT     a.`ACCOUNT_PHONE`,    a.`ACCOUNT_EMAIL`,    b.`USER_NO`,    b.`USER_NAME` CREATE_NAME,    DATE_FORMAT(c.`CREATE_TIME`,'%Y-%m-%d %H:%I:%S') CREATE_TIME,    c.`NOTE_NO`,    c.`NOTE_TITLE`,    d.`TYPE_NAME` NOTE_TYPE  FROM    p_account a,    p_user_info b,    p_note_manage c,    p_note_type d   WHERE a.`ACCOUNT_NO` = b.`ACCOUNT_NO`     AND c.`CREATE_PERSON` = b.`ACCOUNT_NO`     AND d.`TYPE_NO` = c.`NOTE_TYPE`     AND c.is_use = '1'    LIMIT ?,?) t, (SELECT     COUNT(*) totalNum  FROM    p_account a,    p_user_info b,    p_note_manage c,    p_note_type d   WHERE a.`ACCOUNT_NO` = b.`ACCOUNT_NO`     AND c.`CREATE_PERSON` = b.`ACCOUNT_NO`     AND d.`TYPE_NO` = c.`NOTE_TYPE`     AND c.is_use = '1') k
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+  2018-03-23-16-28 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-28 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-28 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-28 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-29 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-29 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-29 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+### The error may exist in file [E:\software\ideaWorkSpace\blog\target\classes\mappers\IBlogServerMapper.xml]
+### The error may involve com.study.blog.server.mapper.IBlogServerMapper.execSqlWithSelect-Inline
+### The error occurred while setting parameters
+### SQL: SELECT t.*,k.totalNum FROM (SELECT     a.`ACCOUNT_PHONE`,    a.`ACCOUNT_EMAIL`,    b.`USER_NO`,    b.`USER_NAME` CREATE_NAME,    DATE_FORMAT(c.`CREATE_TIME`,'%Y-%m-%d %H:%I:%S') CREATE_TIME,    c.`NOTE_NO`,    c.`NOTE_TITLE`,    d.`TYPE_NAME` NOTE_TYPE  FROM    p_account a,    p_user_info b,    p_note_manage c,    p_note_type d   WHERE a.`ACCOUNT_NO` = b.`ACCOUNT_NO`     AND c.`CREATE_PERSON` = b.`ACCOUNT_NO`     AND d.`TYPE_NO` = c.`NOTE_TYPE`     AND c.is_use = '1'    LIMIT ?,?) t, (SELECT     COUNT(*) totalNum  FROM    p_account a,    p_user_info b,    p_note_manage c,    p_note_type d   WHERE a.`ACCOUNT_NO` = b.`ACCOUNT_NO`     AND c.`CREATE_PERSON` = b.`ACCOUNT_NO`     AND d.`TYPE_NO` = c.`NOTE_TYPE`     AND c.is_use = '1') k
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+  2018-03-23-16-29 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-29 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-29 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-29 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-30 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-30 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-30 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+### The error may exist in file [E:\software\ideaWorkSpace\blog\target\classes\mappers\IBlogServerMapper.xml]
+### The error may involve com.study.blog.server.mapper.IBlogServerMapper.execSqlWithSelect-Inline
+### The error occurred while setting parameters
+### SQL: SELECT t.*,k.totalNum FROM (SELECT     a.`ACCOUNT_PHONE`,    a.`ACCOUNT_EMAIL`,    b.`USER_NO`,    b.`USER_NAME` CREATE_NAME,    DATE_FORMAT(c.`CREATE_TIME`,'%Y-%m-%d %H:%I:%S') CREATE_TIME,    c.`NOTE_NO`,    c.`NOTE_TITLE`,    d.`TYPE_NAME` NOTE_TYPE  FROM    p_account a,    p_user_info b,    p_note_manage c,    p_note_type d   WHERE a.`ACCOUNT_NO` = b.`ACCOUNT_NO`     AND c.`CREATE_PERSON` = b.`ACCOUNT_NO`     AND d.`TYPE_NO` = c.`NOTE_TYPE`     AND c.is_use = '1'    LIMIT ?,?) t, (SELECT     COUNT(*) totalNum  FROM    p_account a,    p_user_info b,    p_note_manage c,    p_note_type d   WHERE a.`ACCOUNT_NO` = b.`ACCOUNT_NO`     AND c.`CREATE_PERSON` = b.`ACCOUNT_NO`     AND d.`TYPE_NO` = c.`NOTE_TYPE`     AND c.is_use = '1') k
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+  2018-03-23-16-30 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-30 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-30 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-30 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-31 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-31 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-31 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-31 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-37 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-37 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-37 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-38 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+### The error may exist in file [E:\software\ideaWorkSpace\blog\target\classes\mappers\IBlogServerMapper.xml]
+### The error may involve com.study.blog.server.mapper.IBlogServerMapper.execSqlWithSelect-Inline
+### The error occurred while setting parameters
+### SQL: SELECT t.*,k.totalNum FROM (SELECT     a.`ACCOUNT_PHONE`,    a.`ACCOUNT_EMAIL`,    b.`USER_NO`,    b.`USER_NAME` CREATE_NAME,    DATE_FORMAT(c.`CREATE_TIME`,'%Y-%m-%d %H:%I:%S') CREATE_TIME,    c.`NOTE_NO`,    c.`NOTE_TITLE`,    d.`TYPE_NAME` NOTE_TYPE  FROM    p_account a,    p_user_info b,    p_note_manage c,    p_note_type d   WHERE a.`ACCOUNT_NO` = b.`ACCOUNT_NO`     AND c.`CREATE_PERSON` = b.`ACCOUNT_NO`     AND d.`TYPE_NO` = c.`NOTE_TYPE`     AND c.is_use = '1'    LIMIT ?,?) t, (SELECT     COUNT(*) totalNum  FROM    p_account a,    p_user_info b,    p_note_manage c,    p_note_type d   WHERE a.`ACCOUNT_NO` = b.`ACCOUNT_NO`     AND c.`CREATE_PERSON` = b.`ACCOUNT_NO`     AND d.`TYPE_NO` = c.`NOTE_TYPE`     AND c.is_use = '1') k
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+  2018-03-23-16-38 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-38 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-38 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-38 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-38 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-38 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+### The error may exist in file [E:\software\ideaWorkSpace\blog\target\classes\mappers\IBlogServerMapper.xml]
+### The error may involve com.study.blog.server.mapper.IBlogServerMapper.execSqlWithSelect-Inline
+### The error occurred while setting parameters
+### SQL: SELECT t.*,k.totalNum FROM (SELECT     a.`ACCOUNT_PHONE`,    a.`ACCOUNT_EMAIL`,    b.`USER_NO`,    b.`USER_NAME` CREATE_NAME,    DATE_FORMAT(c.`CREATE_TIME`,'%Y-%m-%d %H:%I:%S') CREATE_TIME,    c.`NOTE_NO`,    c.`NOTE_TITLE`,    d.`TYPE_NAME` NOTE_TYPE  FROM    p_account a,    p_user_info b,    p_note_manage c,    p_note_type d   WHERE a.`ACCOUNT_NO` = b.`ACCOUNT_NO`     AND c.`CREATE_PERSON` = b.`ACCOUNT_NO`     AND d.`TYPE_NO` = c.`NOTE_TYPE`     AND c.is_use = '1'    LIMIT ?,?) t, (SELECT     COUNT(*) totalNum  FROM    p_account a,    p_user_info b,    p_note_manage c,    p_note_type d   WHERE a.`ACCOUNT_NO` = b.`ACCOUNT_NO`     AND c.`CREATE_PERSON` = b.`ACCOUNT_NO`     AND d.`TYPE_NO` = c.`NOTE_TYPE`     AND c.is_use = '1') k
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+  2018-03-23-16-38 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-38 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-38 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-38 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-38 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+### The error may exist in file [E:\software\ideaWorkSpace\blog\target\classes\mappers\IBlogServerMapper.xml]
+### The error may involve com.study.blog.server.mapper.IBlogServerMapper.execSqlWithSelect-Inline
+### The error occurred while setting parameters
+### SQL: SELECT t.*,k.totalNum FROM (SELECT     a.`ACCOUNT_PHONE`,    a.`ACCOUNT_EMAIL`,    b.`USER_NO`,    b.`USER_NAME` CREATE_NAME,    DATE_FORMAT(c.`CREATE_TIME`,'%Y-%m-%d %H:%I:%S') CREATE_TIME,    c.`NOTE_NO`,    c.`NOTE_TITLE`,    d.`TYPE_NAME` NOTE_TYPE  FROM    p_account a,    p_user_info b,    p_note_manage c,    p_note_type d   WHERE a.`ACCOUNT_NO` = b.`ACCOUNT_NO`     AND c.`CREATE_PERSON` = b.`ACCOUNT_NO`     AND d.`TYPE_NO` = c.`NOTE_TYPE`     AND c.is_use = '1'    LIMIT ?,?) t, (SELECT     COUNT(*) totalNum  FROM    p_account a,    p_user_info b,    p_note_manage c,    p_note_type d   WHERE a.`ACCOUNT_NO` = b.`ACCOUNT_NO`     AND c.`CREATE_PERSON` = b.`ACCOUNT_NO`     AND d.`TYPE_NO` = c.`NOTE_TYPE`     AND c.is_use = '1') k
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+  2018-03-23-16-38 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-38 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-38 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-38 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-39 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-39 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-39 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-39 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-40 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-40 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-40 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-40 [http-nio-8090-exec-9] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-41 [http-nio-8090-exec-8] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+### The error may exist in file [E:\software\ideaWorkSpace\blog\target\classes\mappers\IBlogServerMapper.xml]
+### The error may involve com.study.blog.server.mapper.IBlogServerMapper.execSqlWithSelect-Inline
+### The error occurred while setting parameters
+### SQL: SELECT t.*,k.totalNum FROM (SELECT     a.`ACCOUNT_PHONE`,    a.`ACCOUNT_EMAIL`,    b.`USER_NO`,    b.`USER_NAME` CREATE_NAME,    DATE_FORMAT(c.`CREATE_TIME`,'%Y-%m-%d %H:%I:%S') CREATE_TIME,    c.`NOTE_NO`,    c.`NOTE_TITLE`,    d.`TYPE_NAME` NOTE_TYPE  FROM    p_account a,    p_user_info b,    p_note_manage c,    p_note_type d   WHERE a.`ACCOUNT_NO` = b.`ACCOUNT_NO`     AND c.`CREATE_PERSON` = b.`ACCOUNT_NO`     AND d.`TYPE_NO` = c.`NOTE_TYPE`     AND c.is_use = '1'    LIMIT ?,?) t, (SELECT     COUNT(*) totalNum  FROM    p_account a,    p_user_info b,    p_note_manage c,    p_note_type d   WHERE a.`ACCOUNT_NO` = b.`ACCOUNT_NO`     AND c.`CREATE_PERSON` = b.`ACCOUNT_NO`     AND d.`TYPE_NO` = c.`NOTE_TYPE`     AND c.is_use = '1') k
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''0','10') t, (SELECT 
+  COUNT(*) totalNum
+FROM
+  p_account a,
+  p_user_info ' at line 19
+  2018-03-23-16-42 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-42 [http-nio-8090-exec-10] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-42 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-42 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-42 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-42 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-42 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-45 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-45 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-45 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-45 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-45 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-45 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-45 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-46 [http-nio-8090-exec-7] [com.study.blog.server.controller.BlogServerController] [ERROR] - ----extendParamMap-----  出错信息nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 73 milliseconds ago.  The last packet sent successfully to the server was 69 milliseconds ago.
+### The error may exist in file [E:\software\ideaWorkSpace\blog\target\classes\mappers\IUserUtilMapper.xml]
+### The error may involve com.study.blog.server.mapper.IUserUtilMapper.getUserBo
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 73 milliseconds ago.  The last packet sent successfully to the server was 69 milliseconds ago.
+  2018-03-23-16-46 [http-nio-8090-exec-7] [com.study.blog.server.controller.BlogServerController] [ERROR] - execute getUserBo error! use default admin toLogin
+  2018-03-23-16-46 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-46 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-46 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-46 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-46 [http-nio-8090-exec-7] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-46 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-46 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-46 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-46 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-46 [http-nio-8090-exec-6] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-46 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-46 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-46 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-46 [http-nio-8090-exec-5] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  2018-03-23-16-49 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getGirdData config get from cache failure , get from database
+  2018-03-23-16-49 [http-nio-8090-exec-1] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - NOTE-002 config get from cache failure , get from database
+  2018-03-23-16-49 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-49 [http-nio-8090-exec-3] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-49 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getNoteTypes config get from cache failure , get from database
+  2018-03-23-16-49 [http-nio-8090-exec-4] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - TREE-001 config get from cache failure , get from database
+  2018-03-23-16-49 [http-nio-8090-exec-2] [com.study.blog.server.service.BlogServerServiceImpl] [ERROR] - getLogAccountInfo config get from cache failure , get from database
+  

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="../element-ui/lib/theme-chalk/index.css" />
+		<!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+		<title></title>
+		<style>
+			#header {
+				color: white;
+				font-family: '宋体';
+				font-size: 20px;
+				text-align: left;
+				/*filter: alpha(Opacity=80);*/
+				/*-moz-opacity: 0.7;*/
+				/*opacity: 0.7;*/
+			}
+			#login-regist-div {
+				line-height: 50px;
+				text-align: right;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="app">
+			<el-row>
+				<el-col :span="12">
+					<div id="header">
+						欢迎来到我的博客·即将开启梦幻之旅
+					</div>
+				</el-col>
+				<el-col :span="12">
+					<div id="login-regist-div">
+						<div>
+							<el-button v-if="logAccountNo != ''" type="text" @click="toMyBoke">{{logAccountName}},欢迎您</el-button>
+							<el-button v-if="logAccountNo != '' && logRoleNo != '2'" type="primary" size="mini" @click="logOut">退出</el-button>
+							<el-button v-if="logAccountNo == '' || logRoleNo == '2'" type="primary" size="mini" @click="toLogin">登录</el-button>
+							<el-button v-if="logAccountNo == '' || logRoleNo == '2'" type="primary" size="mini" @click="toRegister">注册</el-button>
+						</div>
+					</div>
+				</el-col>
+			</el-row>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/vue.js"></script>
+	<!--<script src="https://unpkg.com/vue/dist/vue.js"></script>-->
+	<script type="text/javascript" src="../element-ui/lib/index.js"></script>
+	<!--<script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/api.js"></script>
+	<script src="../js/frame.js"></script>
+	<script>
+		var vm = new Vue({
+			el: '#app',
+			data: function() {
+				return {
+					visible: "false",
+					logAccountName: "",
+					logAccountNo: "",
+                    logRoleNo:"",
+					
+				}
+			},
+			methods: {
+                toLogin: function () {
+                    window.open(_APINAME+'/blog/login','_top')
+                },
+                logOut: function () {
+                    window.open(_APINAME+'/base/logout','_top')
+                },
+                toRegister: function () {
+                    window.open(_APINAME+'/blog/register','_top')
+                },
+                toMyBoke: function () {
+                    window.open(_APINAME+'/blog/boke','_top')
+                },
+				initAccountInfo:function () {
+                    var _this = this;
+					invocationMode('get',API.GETACCOUNTINFO,'json','',function (data) {
+						console.log(data);
+                        _this.logAccountNo = data.data.logAccountNo;
+                        _this.logAccountName = data.data.logAccountName;
+                        _this.logRoleNo = data.data.logRoleNo;
+                        console.log(_this.logAccountNo)
+                        console.log(_this.logAccountName)
+                        console.log(_this.logRoleNo)
+
+                    })
+                }
+            },
+            created:function(){
+				this.initAccountInfo();
+            }
+		})
+	</script>
+
+</html>

@@ -1,0 +1,54 @@
+[restartedMain][INFO ]2018-02-02 09:21:21.431 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-02 09:21:21.506 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-02 09:21:31.445 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-02 09:21:36.139 [SpringbootApplication.logStarted] - Started SpringbootApplication in 15.242 seconds (JVM running for 84336.516)
+[restartedMain][INFO ]2018-02-02 09:24:28.428 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-02 09:24:28.429 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-02 09:24:31.070 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-02 09:24:32.989 [SpringbootApplication.logStarted] - Started SpringbootApplication in 4.648 seconds (JVM running for 84513.366)
+[restartedMain][INFO ]2018-02-02 09:24:36.213 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-02 09:24:36.214 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-02 09:24:38.457 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-02 09:24:40.093 [SpringbootApplication.logStarted] - Started SpringbootApplication in 3.96 seconds (JVM running for 84520.47)
+[restartedMain][INFO ]2018-02-02 09:33:56.059 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-02 09:33:56.059 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-02 09:34:07.309 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-02 09:34:07.310 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-02 09:34:09.691 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-02 09:34:10.995 [SpringbootApplication.logStarted] - Started SpringbootApplication in 3.778 seconds (JVM running for 85091.372)
+[restartedMain][INFO ]2018-02-02 09:35:48.351 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-02 09:35:48.351 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-02 09:35:50.417 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-02 09:35:52.945 [SpringbootApplication.logStarted] - Started SpringbootApplication in 4.669 seconds (JVM running for 85193.322)
+[restartedMain][INFO ]2018-02-02 09:35:57.571 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-02 09:35:57.572 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-02 09:36:00.385 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-02 09:36:02.421 [SpringbootApplication.logStarted] - Started SpringbootApplication in 5.028 seconds (JVM running for 85202.798)
+[restartedMain][INFO ]2018-02-02 09:36:05.802 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-02 09:36:05.805 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-02 09:36:07.871 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-02 09:36:09.645 [SpringbootApplication.logStarted] - Started SpringbootApplication in 3.921 seconds (JVM running for 85210.022)
+[restartedMain][INFO ]2018-02-02 09:36:14.237 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-02 09:36:14.237 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-02 09:36:16.502 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-02 09:36:19.300 [SpringbootApplication.logStarted] - Started SpringbootApplication in 5.125 seconds (JVM running for 85219.677)
+[restartedMain][INFO ]2018-02-02 09:36:22.454 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-02 09:36:22.455 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-02 09:36:24.165 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-02 09:36:26.109 [SpringbootApplication.logStarted] - Started SpringbootApplication in 3.731 seconds (JVM running for 85226.486)
+[restartedMain][INFO ]2018-02-02 09:37:00.296 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-02 09:37:00.297 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-02 09:37:03.390 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-02 09:37:05.690 [SpringbootApplication.logStarted] - Started SpringbootApplication in 5.494 seconds (JVM running for 85266.067)
+[restartedMain][INFO ]2018-02-02 09:37:11.072 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-02 09:37:11.073 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-02 09:37:12.632 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-02 09:37:14.774 [SpringbootApplication.logStarted] - Started SpringbootApplication in 3.797 seconds (JVM running for 85275.151)
+[restartedMain][INFO ]2018-02-02 09:37:48.566 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-02 09:37:48.570 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-02 09:37:49.631 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-02 09:37:50.607 [SpringbootApplication.logStarted] - Started SpringbootApplication in 2.096 seconds (JVM running for 85310.984)
+[restartedMain][INFO ]2018-02-02 09:37:56.917 [SpringbootApplication.logStarting] - Starting SpringbootApplication on pengpeng with PID 5184 (E:\software\ideaWorkSpace\blog\target\classes started by Administrator in E:\software\ideaWorkSpace\blog)
+[restartedMain][INFO ]2018-02-02 09:37:56.918 [SpringbootApplication.logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+[restartedMain][INFO ]2018-02-02 09:37:58.496 [RedisConfig.getConnectionFactory] - JedisConnectionFactory bean init success.
+[restartedMain][INFO ]2018-02-02 09:37:59.822 [SpringbootApplication.logStarted] - Started SpringbootApplication in 2.953 seconds (JVM running for 85320.199)

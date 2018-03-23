@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.blog.loginAndRegister.mapper.ILoginAndRegisterMapper">
+    <select id="register" parameterType="java.util.Map" statementType="CALLABLE">
+        <![CDATA[
+        CALL PKG_BLOG_REGISTER(#{accountNo,jdbcType=VARCHAR,mode=IN},
+                                #{accountName,jdbcType=VARCHAR,mode=IN},
+                                #{accountPwd,jdbcType=VARCHAR,mode=IN},
+                                #{accountPhone,jdbcType=VARCHAR,mode=IN},
+                                #{accountEmail,jdbcType=VARCHAR,mode=IN},
+                                #{code,jdbcType=INTEGER,mode=OUT},
+                                #{msg,jdbcType=VARCHAR,mode=OUT})
+        ]]>
+    </select>
+    <select id="getCountByAccountNo" parameterType="java.lang.String" resultType="int">
+        select count(1) from p_account t where t.account_no = #{accountNo,jdbcType=VARCHAR}
+    </select>
+
+</mapper>

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../element-ui/lib/theme-chalk/index.css"/>
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+    <title></title>
+    <style>
+        body {
+            background-image: url(../img/login1.jpg);
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        #header {
+            color: white;
+            font-family: '宋体';
+            font-size: 20px;
+            text-align: left;
+            /*filter: alpha(Opacity=80);*/
+            /*-moz-opacity: 0.7;*/
+            /*opacity: 0.7;*/
+        }
+
+        .main {
+            /*margin-left: 500px;*/
+            width: 400px;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            /*filter: alpha(Opacity=80);*/
+            /*-moz-opacity: 0.7;*/
+            /*opacity: 0.7;*/
+            border: solid 0.5px #ffffff;
+            background: #99BBE8;
+        }
+
+        .main #header {
+            color: #409EFF;
+            text-align: center;
+            height: 40px;
+            font-weight: bolder;
+            letter-spacing: inherit
+        }
+
+        #login-regist-div {
+            line-height: 50px;
+            text-align: right;
+        }
+
+        #checkCode .el-form-item__content .el-input {
+            width: 160px;
+            height: 41.2px;
+        }
+
+        #checkCodeImg {
+            display: inline-block;
+            width: 155px;
+            height: 41.2px;
+            vertical-align: middle;
+            border-radius: 5px;
+            background: url(../template/verifyCode.jpg);
+        }
+
+        /*#checkCodeImg img{
+            border-radius: 5px;
+
+        }*/
+        .el-form-item__label {
+            vertical-align: middle;
+            float: left;
+            font-size: 14px;
+            color: #ffffff;
+            line-height: 40px;
+            padding: 0 12px 0 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .el-dialog, .el-pager li {
+            background: rgba(0, 0, 0, 0);
+            -webkit-box-sizing: border-box;
+
+        }
+
+        .el-dialog {
+            position: relative;
+            margin: 0 auto 50px;
+            border-radius: 2px;
+            -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, .3);
+            box-shadow: 0 0px 0px rgba(0, 0, 0, .3);
+            box-sizing: border-box;
+            width: 50%;
+        }
+
+        .el-dialog__wrapper {
+            border: none;
+        }
+
+        .el-form-item {
+            margin-bottom: 12px;
+        }
+
+        .el-button--primary.is-plain {
+            color: #92a3b4;
+            background: #ecf5ff;
+            border-color: #b3d8ff;
+            width: 150px;
+            font-size: 17px;
+        }
+
+        /*校验提示*/
+        .el-alert--error {
+            background-color: #fee;
+            color: #fa5555;
+            padding: 0;
+            height: 30px;
+        }
+
+        .el-alert--success {
+            background-color: #f0f9eb;
+            color: #67c23a;
+            padding: 0;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="app">
+    <el-header height="50px">
+        <el-row>
+            <el-col :span="12">
+                <div id="header">
+                    欢迎来到我的博客·即将开启梦幻之旅
+                </div>
+            </el-col>
+            <el-col :span="12">
+                <div id="login-regist-div">
+                    <el-button type="primary" size="mini" @click="toLogin">登录</el-button>
+                    <el-button type="primary" size="mini" @click="toRegister">注册</el-button>
+                </div>
+            </el-col>
+        </el-row>
+    </el-header>
+    <el-main height="640px">
+        <el-dialog :visible.sync="dialogLoginVisible" :show-close="false" width="500px">
+            <div class="main">
+                <el-form>
+                    <el-alert v-if="showHintLogin"
+                              :title="alertMsg"
+                              :type="alertType"
+                              show-icon>
+                    </el-alert>
+                    <el-form-item>
+                        <el-input type="text" v-model="form.ACCOUNT_NO" prefix-icon="el-icon-info"
+                                  placeholder="请输入用户名/电话/邮箱" @blur="loginCheck('accountNo','用户名不能为空')"
+                                  @change="hideHint">
+                        </el-input>
+                    </el-form-item>
+                    <el-form-item>
+                        <el-input type="password" v-model="form.ACCOUNT_PWD" prefix-icon="el-icon-goods"
+                                  placeholder="请输入密码" @blur="loginCheck('accountPwd','密码不能为空')" @change="hideHint">
+                        </el-input>
+                    </el-form-item>
+                </el-form>
+                <div slot="footer">
+                    <el-button type="primary" @click="login" plain>登&nbsp;&nbsp;录</el-button>
+                    <el-button type="primary" @click="toRegister" plain>注&nbsp;&nbsp;册</el-button>
+                </div>
+            </div>
+        </el-dialog>
+        <el-dialog :visible.sync="dialogRegisterVisible" :show-close="false" width="500px">
+            <div class="main">
+                <el-form :label-position="labelPosition" label-width="80px">
+                    <el-form-item label="用户名 :">
+                        <el-alert v-if="showHintNo"
+                                  :title="alertMsg"
+                                  :type="alertType"
+                                  show-icon>
+                        </el-alert>
+                        <el-input type="text" v-model="form.ACCOUNT_NO" placeholder="请输入账户"
+                                  @blur="checkConfirm('accountNo')">
+                        </el-input>
+                    </el-form-item>
+                    <el-form-item label="昵称 :">
+                        <el-alert v-if="showHintName"
+                                  :title="alertMsg"
+                                  :type="alertType"
+                                  show-icon>
+                        </el-alert>
+                        <el-input type="text" v-model="form.ACCOUNT_NAME" placeholder="请输入昵称"
+                                  @blur="checkConfirm('accountName')">
+                        </el-input>
+                    </el-form-item>
+                    <el-form-item label="邮箱 :">
+                        <el-alert v-if="showHintEmail"
+                                  :title="alertMsg"
+                                  :type="alertType"
+                                  show-icon>
+                        </el-alert>
+                        <el-input type="text" v-model="form.ACCOUNT_EMAIL" placeholder="请输入邮箱"
+                                  @blur="checkConfirm('accountEmail')">
+                        </el-input>
+                    </el-form-item>
+                    <el-form-item label="电话 :">
+                        <el-alert v-if="showHintPhone"
+                                  :title="alertMsg"
+                                  :type="alertType"
+                                  show-icon>
+                        </el-alert>
+                        <el-input type="text" v-model="form.ACCOUNT_PHONE" placeholder="请输入电话"
+                                  @blur="checkConfirm('accountPhone')">
+                        </el-input>
+                    </el-form-item>
+                    <el-form-item label="密码 :">
+                        <el-alert v-if="showHintPwd"
+                                  :title="alertMsg"
+                                  :type="alertType"
+                                  show-icon>
+                        </el-alert>
+                        <el-input type="password" v-model="form.ACCOUNT_PWD" placeholder="请输入密码"
+                                  @blur="checkConfirm('accountPwd')">
+                        </el-input>
+                    </el-form-item>
+                    <el-form-item label="确认密码 :">
+                        <el-alert v-if="showHintCheckPwd"
+                                  :title="alertMsg"
+                                  :type="alertType"
+                                  show-icon>
+                        </el-alert>
+                        <el-input type="password" v-model="form.CHECK_PWD" placeholder="请确认密码"
+                                  @blur="checkConfirm('checkPwd')">
+                        </el-input>
+                    </el-form-item>
+                    <el-form-item label="校验码 :" id="checkCode">
+                        <el-alert v-if="showHintCheckCode"
+                                  :title="alertMsg"
+                                  :type="alertType"
+                                  show-icon>
+                        </el-alert>
+                        <el-input type="text" v-model="form.CHECK_CODE" placeholder="请输入校验"
+                                  @blur="checkConfirm('checkCode')">
+                        </el-input>
+                        <div id="checkCodeImg" @click="changeImg">
+                        </div>
+                    </el-form-item>
+                </el-form>
+
+                <div slot="footer">
+                    <el-button type="primary" @click="register" plain>用户注册</el-button>
+                </div>
+            </div>
+        </el-dialog>
+    </el-main>
+</div>
+</body>
+<script type="text/javascript" src="../js/vue.js"></script>
+<!--<script src="https://unpkg.com/vue/dist/vue.js"></script>-->
+<script type="text/javascript" src="../element-ui/lib/index.js"></script>
+<!--<script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/frame.js"></script>
+<script type="text/javascript" src="../js/api.js"></script>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script>
+    $(function () {
+    });
+    var vm = new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                apiName: _APINAME,
+                dialogLoginVisible: true,
+                dialogRegisterVisible: false,
+                formLabelWidth: "80px",
+                labelPosition: "right",
+                alertType: "",
+                alertMsg: "",
+                showHintLogin: false,
+                showHintNo: false,
+                showHintName:false,
+                showHintPwd: false,
+                showHintCheckPwd: false,
+                showHintEmail: false,
+                showHintPhone: false,
+                showHintCheckCode: false,
+                form: {
+                    ACCOUNT_NO: "",
+                    ACCOUNT_NAME:"",
+                    ACCOUNT_PWD: "",
+                    CHECK_PWD: "",
+                    ACCOUNT_EMAIL: "",
+                    ACCOUNT_PHONE: "",
+                    ACCOUNT_NAME: "",
+                    CHECK_CODE: "",
+                },
+                confirm: false,
+            }
+        },
+        methods: {
+            toLogin: function () {
+                this.dialogRegisterVisible = false;
+                this.dialogLoginVisible = true;
+
+            },
+            toRegister: function () {
+                this.dialogLoginVisible = false;
+                this.dialogRegisterVisible = true;
+                this.form.ACCOUNT_PWD = "";
+                this.form.CHECK_PWD = "";
+                this.form.CHECK_CODE = "";
+                this.changeImg();
+            },
+            login: function () {
+                var _this = this;
+                if (JsUtil.isEmpty(_this.form.ACCOUNT_NO)) {
+                    _this.showHintLogin = true;
+                    _this.alertType = "error";
+                    _this.alertMsg = "用户名不能为空";
+                    return;
+                }
+                if (JsUtil.isEmpty(_this.form.ACCOUNT_PWD)) {
+                    _this.showHintLogin = true;
+                    _this.alertType = "error";
+                    _this.alertMsg = "密码不能为空";
+                    return;
+                }
+                var params = {};
+                params.accountNo = _this.form.ACCOUNT_NO;
+                params.accountPwd = _this.form.ACCOUNT_PWD;
+                invocationMode("get", API.LOGIN, "json", params, function (data) {
+                    console.log(data);
+                    if (data.code == 1) {
+                        window.location.href = _this.apiName + '/blog/home'
+                    } else if (data.code == -1) {
+                        _this.showHintLogin = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = data.msg;
+                    }
+                });
+
+            },
+            register: function () {
+                var _this = this;
+                if (!_this.checkConfirm("register")) {
+                    return;
+                }
+                var params = {};
+                params.verCode = _this.form.CHECK_CODE;
+                params.accountNo = _this.form.ACCOUNT_NO;
+                params.accountPwd = _this.form.ACCOUNT_PWD;
+                params.accountPhone = _this.form.ACCOUNT_PHONE;
+                params.accountEmail = _this.form.ACCOUNT_EMAIL;
+                params.checkPwd = _this.form.CHECK_PWD;
+                invocationMode("get", API.REGISTER, "json", params, function (data) {
+                    console.log(data);
+                    if (data.code == '1') {
+                        _this.dialogLoginVisible = true;
+                        _this.dialogRegisterVisible = false;
+                        _this.form.ACCOUNT_PWD = "";
+                        _this.form.CHECK_PWD = "";
+                        _this.form.CHECK_CODE = "";
+                    } else {
+                        console.log(data.msg);
+                        _this.changeImg();
+                    }
+                });
+            },
+            changeImg: function () {
+                var url = this.apiName + "/authImage?date=" + new Date().getMilliseconds()
+                console.log(url);
+                $("#checkCodeImg").css("backgroundImage", "url(" + url + ")")
+            },
+            //	注册校验
+            checkConfirm: function (type) {
+                var _this = this;
+                _this.hideHint();
+                if (type == "accountNo") {
+                    if (JsUtil.isEmpty(_this.form.ACCOUNT_NO)) {
+                        _this.showHintNo = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "用户名不能为空";
+                        return false;
+                    }
+                    if (JsUtil.isNotEmpty(_this.form.ACCOUNT_NO)) {
+                        invocationMode("get", API.CHECKACCOUNTNO, "json", {accountNo: _this.form.ACCOUNT_NO}, function (rs) {
+                            if (rs.code == 0) {
+                                _this.showHintNo = true;
+                                _this.alertType = "success";
+                                _this.alertMsg = "恭喜该用户名可以使用";
+                                return true;
+                            } else {
+                                _this.showHintNo = true;
+                                _this.alertType = "error";
+                                _this.alertMsg = "sorry,该用户名已经被使用";
+                                return false;
+                            }
+                        })
+                    }
+                    return true;
+                }
+                if (type == "accountName") {
+                    if (JsUtil.isEmpty(_this.form.ACCOUNT_NAME)) {
+                        _this.showHintName = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "昵称不能为空";
+                        return false;
+                    }
+                    _this.confirm = true;
+                    return true;
+                }
+                if (type == "accountEmail") {
+                    if (JsUtil.isEmpty(_this.form.ACCOUNT_EMAIL)) {
+                        _this.showHintEmail = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "邮箱号不能为空";
+                        return false;
+                    }
+                    if (JsUtil.isNotEmpty(_this.form.ACCOUNT_EMAIL)) {
+                        var regex = /^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3}(\.[a-z]{2})?)$/g;
+                        if (regex.test(_this.form.ACCOUNT_EMAIL)) {
+                            _this.showHintEmail = true;
+                            _this.alertType = "success";
+                            _this.alertMsg = "您输入的邮箱格式正确";
+                            return true;
+                        } else {
+                            _this.showHintEmail = true;
+                            _this.alertType = "error";
+                            _this.alertMsg = "您输入的邮箱格式不正确";
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+                if (type == "accountPhone") {
+                    if (JsUtil.isEmpty(_this.form.ACCOUNT_PHONE)) {
+                        _this.showHintPhone = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "手机号不能为空";
+                        return false;
+                    }
+                    if (JsUtil.isNotEmpty(_this.form.ACCOUNT_PHONE)) {
+                        var regex = /^[1][3,4,5,7,8][0-9]{9}$/;
+                        if (!regex.test(_this.form.ACCOUNT_PHONE)) {
+                            _this.showHintPhone = true;
+                            _this.alertType = "error";
+                            _this.alertMsg = "您输入的手机格式不正确";
+                            return false;
+                        }
+                    }
+                    _this.confirm = true;
+                    return true;
+                }
+                if (type == "accountPwd") {
+                    if (JsUtil.isEmpty(_this.form.ACCOUNT_PWD)) {
+                        _this.showHintPwd = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "密码不能为空";
+                        return false;
+                    }
+                    _this.confirm = true;
+                    return true;
+                }
+                if (type == "checkPwd") {
+                    if (JsUtil.isEmpty(_this.form.CHECK_PWD)) {
+                        _this.showHintCheckPwd = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "确认密码不能为空";
+                        return false;
+                    }
+                    if (JsUtil.isNotEmpty(_this.form.CHECK_PWD) && _this.form.CHECK_PWD != _this.form.ACCOUNT_PWD) {
+                        _this.showHintCheckPwd = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "两次密码输入不同";
+                        return false;
+                    }
+                    _this.confirm = true;
+                    return true;
+                }
+                if (type == "checkCode") {
+                    if (JsUtil.isEmpty(_this.form.CHECK_CODE)) {
+                        _this.showHintCheckCode = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "校验码不能为空";
+                        return false;
+                    }
+                    if (JsUtil.isNotEmpty(_this.form.CHECK_CODE)) {
+                        invocationMode("get", API.CHECKVERCODE, "json", {verCode: _this.form.CHECK_CODE}, function (rs) {
+                            if (rs.code == -1) {
+                                _this.showHintCheckCode = true;
+                                _this.alertType = "error";
+                                _this.alertMsg = "校验错误";
+                                return false;
+                            }
+                        })
+                    }
+                    return true;
+                }
+                if (type == "register") {
+                    if (JsUtil.isEmpty(_this.form.ACCOUNT_NO)) {
+                        _this.showHintNo = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "用户名不能为空";
+                        return false;
+                    }
+                    if (JsUtil.isNotEmpty(_this.form.ACCOUNT_NO)) {
+                        invocationMode("get", API.CHECKACCOUNTNO, "json", {accountNo: _this.form.ACCOUNT_NO}, function (rs) {
+                            if (rs.code != 0) {
+                                _this.showHintNo = true;
+                                _this.alertType = "error";
+                                _this.alertMsg = "sorry,该用户名已经被使用";
+                                return false;
+                            }
+                        })
+                    }
+                    if (JsUtil.isEmpty(_this.form.ACCOUNT_NAME)) {
+                        _this.showHintName = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "昵称不能为空";
+                        return false;
+                    }
+                    if (JsUtil.isEmpty(_this.form.ACCOUNT_EMAIL)) {
+                        _this.showHintEmail = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "邮箱号不能为空";
+                        return false;
+                    }
+                    if (JsUtil.isNotEmpty(_this.form.ACCOUNT_EMAIL)) {
+                        var regex = /^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3}(\.[a-z]{2})?)$/g;
+                        if (!regex.test(_this.form.ACCOUNT_EMAIL)) {
+                            _this.showHintEmail = true;
+                            _this.alertType = "error";
+                            _this.alertMsg = "您输入的邮箱格式不正确";
+                            return false;
+                        }
+                    }
+                    if (JsUtil.isEmpty(_this.form.ACCOUNT_PHONE)) {
+                        _this.showHintPhone = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "手机号不能为空";
+                        return false;
+                    }
+                    if (JsUtil.isNotEmpty(_this.form.ACCOUNT_PHONE)) {
+                        var regex = /^[1][3,4,5,7,8][0-9]{9}$/;
+                        if (!regex.test(_this.form.ACCOUNT_PHONE)) {
+                            _this.showHintPhone = true;
+                            _this.alertType = "error";
+                            _this.alertMsg = "您输入的手机格式不正确";
+                            return false;
+                        }
+                    }
+                    if (JsUtil.isEmpty(_this.form.ACCOUNT_PWD)) {
+                        _this.showHintPwd = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "密码不能为空";
+                        return false;
+                    }
+                    if (JsUtil.isEmpty(_this.form.CHECK_PWD)) {
+                        _this.showHintCheckPwd = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "确认密码不能为空";
+                        return false;
+                    }
+                    if (JsUtil.isNotEmpty(_this.form.CHECK_PWD) && _this.form.CHECK_PWD != _this.form.ACCOUNT_PWD) {
+                        _this.showHintCheckPwd = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "两次密码输入不同";
+                        return false;
+                    }
+                    if (JsUtil.isEmpty(_this.form.CHECK_CODE)) {
+                        _this.showHintCheckCode = true;
+                        _this.alertType = "error";
+                        _this.alertMsg = "校验码不能为空";
+                        return false;
+                    }
+                    if (JsUtil.isNotEmpty(_this.form.CHECK_CODE)) {
+                        invocationMode("get", API.CHECKVERCODE, "json", {verCode: _this.form.CHECK_CODE}, function (rs) {
+                            if (rs.code == -1) {
+                                _this.showHintCheckCode = true;
+                                _this.alertType = "error";
+                                _this.alertMsg = "校验错误";
+                                return false;
+                            }
+                        })
+                    }
+                    return true;
+                }
+
+            },
+            loginCheck: function (type, msg) {
+                this.hideHint();
+                if (type == 'accountNo' && JsUtil.isEmpty(this.form.ACCOUNT_NO)) {
+                    this.showHintLogin = true;
+                    this.alertType = "error";
+                    this.alertMsg = msg;
+                }
+                if (type == 'accountPwd' && JsUtil.isEmpty(this.form.ACCOUNT_PWD)) {
+                    this.showHintLogin = true;
+                    this.alertType = "error";
+                    this.alertMsg = msg;
+                }
+
+            },
+            hideHint: function () {
+                this.showHintCheckCode = false;
+                this.showHintCheckPwd = false;
+                this.showHintPwd = false
+                this.showHintEmail = false;
+                this.showHintPhone = false;
+                this.showHintNo = false;
+                this.showHintLogin = false;
+            },
+        },
+        created: function () {
+//				setInterval(function() {
+//					var times = new Date().getSeconds();
+//					var i = times % 4;
+//					console.log(times)
+//					$("body").css("background-image", "url("+_APINAME+"/img/login" + i + ".jpg)");
+//				}, 5000);
+            console.log(JsUtil.isEmpty());
+        },
+        mounted: function () {
+            console.log(returnCitySN["cip"] + ',' + returnCitySN["cname"])
+        }
+    })
+</script>
+
+</html>

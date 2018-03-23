@@ -1,0 +1,90 @@
+/*单位树---样式设置*/
+.ms-dialog--tiny {
+    border-radius: 1px;
+    /*height: 500px;*/
+    width: 26%;
+    /*overflow: outo;*/
+}
+
+.ms-dialog--tiny .ms-input .ms-input__inner {
+    /*width: 320px;*/
+    width: 100%;
+}
+
+.ms-dialog__header {
+    padding: 0;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #0086e4;
+    border-radius: 1px;
+}
+
+.ms-dialog--tiny .ms-dialog__body {
+    padding: 12px 15px;
+    width: 350px;
+    height: 400px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.ms-dialog__title {
+    color: #fff;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.ms-dialog__close {
+    font-size: 15px;
+    padding-right: 5px;
+}
+
+.ms-dialog__footer {
+    /*position: absolute;*/
+    bottom: 0px;
+    right: 0px;
+}
+
+.is-current > .ms-tree-node__content {
+    background: #eee;
+}
+
+.nodeImg{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    padding-right:8px;
+}
+
+em {
+    font-style: normal;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 24px;
+    padding: 2px;
+    width: 24px;
+    text-align: center;
+}
+
+.ms-tree {
+    border: none;
+}
+.type_tree_dialog .el-dialog{
+    position: relative;
+    margin: 0 auto 50px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+    width: 20%;
+    height: 500px;
+}
+.type_tree_dialog .el-dialog__body{
+    padding: 5px 15px;
+    color: #5a5e66;
+    line-height: 24px;
+    font-size: 14px;
+    height: 350px;
+}
