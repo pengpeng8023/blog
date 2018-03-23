@@ -73,7 +73,11 @@ public class ReflectTools {
 			entry = (Entry) entries.next();
 			name = (String) entry.getKey();
 			Object valueObj = entry.getValue();
-			parameterMap.put(name, valueObj);
+			if("startNum".equals(name) || "pageSize".equals(name)){
+				parameterMap.put(name, Integer.valueOf(valueObj.toString()));
+			}else{
+				parameterMap.put(name, valueObj);
+			}
 		}
 		return parameterMap;
 	}
@@ -151,7 +155,11 @@ public class ReflectTools {
 			} else {
 				value = valueObj.toString();
 			}
-			returnMap.put(name, value);
+			if("startNum".equals(name) || "pageSize".equals(name)){
+				returnMap.put(name, Integer.valueOf(value.toString()));
+			}else{
+				returnMap.put(name, value);
+			}
 		}
 		return returnMap;
 	}
