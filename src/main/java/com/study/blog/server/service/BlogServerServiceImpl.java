@@ -41,7 +41,7 @@ public class BlogServerServiceImpl implements IBlogServerService {
     // 自定义SQL数据缓存前缀
     private final String SERVER_CUST_PARAM_PREFIX = "CUST_DAO_PARAM_";
     // 输出参数
-    private final static String SQL_OUT_DATA_NAME = "outdata";
+    //private final static String SQL_OUT_DATA_NAME = "outdata";
     // 输出消息
     private final static String SQL_OUT_MSG_NAME = "outmsg";
 
