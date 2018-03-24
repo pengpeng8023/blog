@@ -1,5 +1,7 @@
 server:
   port: 8090
+  tomcat:
+    maxHttpPostSize: 4194304
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
