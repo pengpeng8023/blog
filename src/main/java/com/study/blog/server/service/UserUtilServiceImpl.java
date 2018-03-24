@@ -42,7 +42,7 @@ public class UserUtilServiceImpl implements IUserUtilService {
             bo.setUserName(userName);
             bo.setAccountRoleNo("2");
             bo.setAccountRoleName("游客");
-            mapper.insertUserBo(bo);
+            //mapper.insertUserBo(bo);
         }else{
             bo = mapper.getUserBo(accountNo);
         }
