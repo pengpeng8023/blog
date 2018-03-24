@@ -61,6 +61,7 @@ var JsUtil={
         return true;
     }
 }
+//日期转换公共方法（日期，类型）
 function dateToString(date,type){
     var n = date.getFullYear();
     var y = date.getMonth()+1;
