@@ -59,37 +59,38 @@ var JsUtil={
             }
         }
         return true;
-    }
-}
-//日期转换公共方法（日期，类型）
-function dateToString(date,type){
-    var n = date.getFullYear();
-    var y = date.getMonth()+1;
-    var r = date.getDate();
-    var s = date.getHours();
-    var f = date.getMinutes();
-    var m = date.getSeconds();
-    if(y<10){
-        y= "0"+y
-    }
-    if(r<10){
-        r= "0"+r
-    }
-    if(s<10){
-        s= "0"+s
-    }
-    if(f<10){
-        f= "0"+f
-    }
-    if(m<10){
-        m= "0"+m
-    }
-    if(type == 'yyyy-MM-dd HH:mm:ss'){
-        return n+"-"+y+"-"+r+" "+s+":"+f+":"+m
-    }else if(type == 'yyyy-MM-dd'){
-        return n+"-"+y+"-"+r
-    }else{
-        return n+y+r
-    }
+    },
+    //日期转换公共方法（日期，类型）
+    dateToString:function(date,type){
+        var n = date.getFullYear();
+        var y = date.getMonth()+1;
+        var r = date.getDate();
+        var s = date.getHours();
+        var f = date.getMinutes();
+        var m = date.getSeconds();
+        if(y<10){
+            y= "0"+y
+        }
+        if(r<10){
+            r= "0"+r
+        }
+        if(s<10){
+            s= "0"+s
+        }
+        if(f<10){
+            f= "0"+f
+        }
+        if(m<10){
+            m= "0"+m
+        }
+        if(type == 'yyyy-MM-dd HH:mm:ss'){
+            return n+"-"+y+"-"+r+" "+s+":"+f+":"+m
+        }else if(type == 'yyyy-MM-dd'){
+            return n+"-"+y+"-"+r
+        }else{
+            return n+y+r
+        }
 
+    }
 }
+
