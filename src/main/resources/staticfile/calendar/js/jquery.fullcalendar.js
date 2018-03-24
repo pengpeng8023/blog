@@ -979,7 +979,7 @@
 		    //获取到当前日期	
          var parts = $(this).attr('abbr').split('-');
      
-        //动态添加div给予赋值
+        /*//动态添加div给予赋值
         	window.parent.$("#iframe").append('<div class="div_val">'+parts+'</div>');
         //获取div的值 	
            var div_val=window.parent.$("#iframe").find(".div_val").text();
@@ -990,7 +990,7 @@
            }
            
         //把值赋给文本框   
-           window.parent.$("#iframe").find("#J-xl").val(rep);
+           window.parent.$("#iframe").find("#J-xl").val(rep);*/
            
 
 	       

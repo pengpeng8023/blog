@@ -1,17 +1,17 @@
 /*单位树---样式设置*/
-.ms-dialog--tiny {
+.el-dialog--tiny {
     border-radius: 1px;
     /*height: 500px;*/
     width: 26%;
     /*overflow: outo;*/
 }
 
-.ms-dialog--tiny .ms-input .ms-input__inner {
+.el-dialog--tiny .el-input .el-input__inner {
     /*width: 320px;*/
     width: 100%;
 }
 
-.ms-dialog__header {
+.el-dialog__header {
     padding: 0;
     height: 36px;
     line-height: 36px;
@@ -20,7 +20,7 @@
     border-radius: 1px;
 }
 
-.ms-dialog--tiny .ms-dialog__body {
+.el-dialog--tiny .el-dialog__body {
     padding: 12px 15px;
     width: 350px;
     height: 400px;
@@ -28,25 +28,25 @@
     box-sizing: border-box;
 }
 
-.ms-dialog__title {
+.el-dialog__title {
     color: #fff;
     font-weight: 100;
     font-size: 14px;
 }
 
-.ms-dialog__close {
+.el-dialog__close {
     font-size: 15px;
     padding-right: 5px;
 }
 
-.ms-dialog__footer {
+.el-dialog__footer {
     /*position: absolute;*/
     bottom: 0px;
     right: 0px;
 }
 
-.is-current > .ms-tree-node__content {
-    background: #eee;
+.is-current > .el-tree-node__content {
+    background: #409EFF;
 }
 
 .nodeImg{
@@ -68,7 +68,7 @@ em {
     text-align: center;
 }
 
-.ms-tree {
+.el-tree {
     border: none;
 }
 .type_tree_dialog .el-dialog{

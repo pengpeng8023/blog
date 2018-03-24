@@ -178,3 +178,8 @@
     margin-top: 11px;
     text-align: center;
 }
+.p_confirm .el-dialog{
+    width: 20%;
+    margin-top: 20vh;
+    height: 124px;
+}
