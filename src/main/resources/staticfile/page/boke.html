@@ -22,22 +22,22 @@
 
 						<el-header height="50px">
 							<div class="search-condition">
-								<el-input placeholder="请输入内容" v-model="input5" class="input-with-select">
-									<el-button slot="append" icon="el-icon-search" @click="showValue"></el-button>
+								<el-input placeholder="请输入内容" v-model="searchText" class="input-with-select">
+									<el-button slot="append" icon="el-icon-search" @click="getGirdData"></el-button>
 								</el-input>
 							</div>
 							<div class="search-condition">
-								<el-date-picker v-model="value7" type="daterange" align="right" unlink-panels range-separator="至" start-placeholder="开始日期" end-placeholder="结束日期" :picker-options="pickerOptions2">
+								<el-date-picker v-model="dateArea" type="daterange" align="right" unlink-panels range-separator="至" start-placeholder="开始日期" end-placeholder="结束日期" :picker-options="pickerOptions2">
 								</el-date-picker>
 							</div>
 						</el-header>
 					<el-container>
 						<el-aside width="250px">
-							<show-tree></show-tree>
+							<show-tree @tree-click="treeClick"></show-tree>
 						</el-aside>
 						<el-main height="640px">
 
-							<el-table :data="tableData" stripe border  style="width: 100%;height: 600px;" @selection-change="handleSelectionChange">
+							<el-table :data="tableData" stripe border  style="width: 100%;height: 600px;overflow-y: auto;" @selection-change="handleSelectionChange">
 								<el-table-column type="selection" width="55">
 								</el-table-column>
 								<el-table-column label="编号" width="100">
@@ -94,7 +94,7 @@
 									</div>
 								</el-col>
 							</el-row>
-							<el-dialog title="日记信息" :visible.sync="dialogFormVisible" width="80%">
+							<el-dialog title="日记信息" :visible.sync="dialogFormVisible" width="80%" :before-close="closeDialogFormVisible">
 								<el-form >
 									<el-form-item label="类型" :label-width="formLabelWidth">
 										<el-input @focus="showTypeTree" v-model="dialog.noteTypeName"></el-input>
@@ -164,7 +164,6 @@
 			data: function() {
 				return {
 					visible: "false",
-					input5: '',
 					value1: '',
 					tableData: Array(pageSize).fill(item),
                     pageNum: 1,
@@ -172,9 +171,7 @@
 					totalNum:1,
 					noteType:'',
 					searchText:'',
-					startTime:'',
-					endTime:'',
-					value7: [new Date() - 7, new Date()],
+                    dateArea: [ new Date(new Date().getTime() - 7 * 24 * 3600 * 1000), new Date()],
 					pickerOptions2: {
 						shortcuts: [{
 							text: '最近一周',
@@ -218,6 +215,11 @@
 				}
 			},
 			methods: {
+			    treeClick:function(msg){
+			        console.log(msg);
+			        this.noteType=msg.code;
+                    this.getGirdData();
+				},
                 treeOk:function(msg){
                     this.dialog.noteTypeName = msg.name;
                     this.dialog.noteTypeNo = msg.code;
@@ -248,11 +250,13 @@
 				},
 				handleSizeChange: function(val) {
 					console.log(`每页 ${val} 条`);
-					this.pageNum = val;
+					this.pageSize = val;
+                    this.getGirdData();
 				},
 				handleCurrentChange: function(val) {
 					console.log(`当前页: ${val}`);
-                    this.pageSize = val;
+                    this.pageNum = val;
+                    this.getGirdData();
 				},
 				ctnUpdate: function(data) {
                     this.dialog.noteContain = data
@@ -302,11 +306,11 @@
                     params.noteContain = _this.dialog.noteContain;
                     params.noteTypeNo = _this.dialog.noteTypeNo;
                     if(_this.dialog.noteFlag == '1'){
-                        invocationMode('get',API.SAVENOTEMANAGE,'json',params,function (data) {
+                        invocationMode('post',API.SAVENOTEMANAGE,'json',params,function (data) {
                             _this.closeDialogFormVisible();
                         })
 					}else{
-                        invocationMode('get',API.UPDATENOTEMANAGE,'json',params,function (data) {
+                        invocationMode('post',API.UPDATENOTEMANAGE,'json',params,function (data) {
                             _this.closeDialogFormVisible();
                         })
 
@@ -317,14 +321,18 @@
                     var params = {};
                     params.startNum = (_this.pageNum-1)*_this.pageSize;
                     params.pageSize= _this.pageSize;
-                    params.startTime = _this.startTime;
-                    params.endTime = _this.endTime;
+                    params.startTime = JsUtil.dateToString(_this.dateArea[0],'yyyy-MM-dd');
+                    params.endTime = JsUtil.dateToString(_this.dateArea[1],'yyyy-MM-dd');
                     params.noteType = _this.noteType;
                     params.searchText = _this.searchText;
                     invocationMode('get',API.GETGIRDDATA,'json',params,function (data) {
                         console.log(data);
                         _this.tableData = data.data;
-                        _this.totalNum = data.data[0].totalNum;
+                        if(data.data.length>0){
+                            _this.totalNum = data.data[0].totalNum;
+						}else{
+                            _this.totalNum = 0;
+						}
 
                     })
                 }

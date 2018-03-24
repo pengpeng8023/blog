@@ -100,7 +100,7 @@
 						<div >
 							<div style="height: 250px;">
 								<ol style="list-style-type:none;">
-									<li v-for="(item,index) in dataList.items">
+									<li v-for="(item,index) in items">
 										<i>{{index+1}}</i>
 										<a href="#">{{item.title}}</a>
 										<span>{{item.time}}</span>
@@ -116,7 +116,7 @@
 							</div>
 						</div>
 					</el-aside>
-					<el-main><span v-html="dataList.contain"></span></el-main>
+					<el-main><span v-html="contain"></span></el-main>
 				</el-container>
 			</el-container>
 		</div>
@@ -126,26 +126,37 @@
 	<script type="text/javascript" src="../element-ui/lib/index.js"></script>
 	<!--<script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
 	<script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
+    <script type="text/javascript" src="../js/api.js"></script>
+	<script type="text/javascript" src="../js/frame.js"></script>
 	<script>
 
 		setInterval(function(){
-			$("#date-time").html(dateToString(new Date()));
+			$("#date-time").html(JsUtil.dateToString(new Date(),'yyyy-MM-dd HH:mm:ss'));
 		},1000);
-		var dataList = {items:[],
-			contain:'<p contenteditable="true">asdasd<font color="#009900">adasdad</font><font color="#fa8919">asdadss</font></p><p contenteditable="true"><font color="#fa8919">asdasdsa</font></p><p contenteditable="true"><font color="#fa8919">asdasd</font></p>',
-		}
 		var vm = new Vue({
 			el: '#app',
 			data: function() {
 				return {
-					dataList
+                    items:[],
+                    contain:'<p contenteditable="true">asdasd<font color="#009900">adasdad</font><font color="#fa8919">asdadss</font></p><p contenteditable="true"><font color="#fa8919">asdasdsa</font></p><p contenteditable="true"><font color="#fa8919">asdasd</font></p>',
 				}
 			},
 			methods: {
 				login:function(){
 					window.location.href="boke.html"
-				}
-			}
+				},
+				getNoteContain:function () {
+				    var _this = this;
+                    invocationMode('get',API.GETNOTECONTAIN,'json',{},function (data) {
+                        console.log(data);
+                        _this.contain = data.data[0].noteContain;
+
+                    })
+                }
+			},
+            created:function(){
+                this.getNoteContain();
+            }
 		})
 	</script>
 

@@ -13,6 +13,7 @@ var API ={
     GETNOTEMANAGE:_APINAME+"/blog/invokeWebService/getNoteManage",//获取日记信息
     SAVENOTEMANAGE:_APINAME+"/blog/invokeWebService/saveNoteManage",//保存日记信息
     UPDATENOTEMANAGE:_APINAME+"/blog/invokeWebService/updateNoteManage",//修改日记信息
+    GETNOTECONTAIN:_APINAME+"/blog/invokeWebService/getNoteContain",//获取日记内容
 };
 
 function getRootPath(){  
@@ -62,34 +63,28 @@ var JsUtil={
     },
     //日期转换公共方法（日期，类型）
     dateToString:function(date,type){
-        var n = date.getFullYear();
-        var y = date.getMonth()+1;
-        var r = date.getDate();
-        var s = date.getHours();
-        var f = date.getMinutes();
-        var m = date.getSeconds();
-        if(y<10){
-            y= "0"+y
+        var yyyy = date.getFullYear();
+        var MM = date.getMonth()+1;
+        var dd = date.getDate();
+        var HH = date.getHours();
+        var mm = date.getMinutes();
+        var ss = date.getSeconds();
+        if(MM<10){
+            MM= "0"+MM
         }
-        if(r<10){
-            r= "0"+r
+        if(dd<10){
+            dd= "0"+dd
         }
-        if(s<10){
-            s= "0"+s
+        if(HH<10){
+            HH= "0"+HH
         }
-        if(f<10){
-            f= "0"+f
+        if(mm<10){
+            mm= "0"+mm
         }
-        if(m<10){
-            m= "0"+m
+        if(ss<10){
+            ss= "0"+ss
         }
-        if(type == 'yyyy-MM-dd HH:mm:ss'){
-            return n+"-"+y+"-"+r+" "+s+":"+f+":"+m
-        }else if(type == 'yyyy-MM-dd'){
-            return n+"-"+y+"-"+r
-        }else{
-            return n+y+r
-        }
+        return type.replace('yyyy',yyyy).replace('MM',MM).replace('dd',dd).replace('HH',HH).replace('mm',mm).replace('ss',ss);
 
     }
 }

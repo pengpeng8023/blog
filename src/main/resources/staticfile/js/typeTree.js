@@ -50,7 +50,7 @@ Vue.component('type-tree',{
     methods:{
         http(code) {
             var _this = this;
-            invocationMode("get", API.NOTETYPE, "",{typeCode:code}, function(data) {
+            invocationMode("get", API.NOTETYPE, "",{typeCode:code,type:'hide'}, function(data) {
 				console.log(data.data);
                 _this.treeData = data.data;
                 return data.data;

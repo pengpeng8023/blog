@@ -40,7 +40,7 @@ Vue.component('show-tree',{
     methods:{
         http(code) {
             var _this = this;
-            invocationMode("get", API.NOTETYPE, "",{typeCode:code}, function(data) {
+            invocationMode("get", API.NOTETYPE, "",{typeCode:code,type:'show'}, function(data) {
 				console.log(data.data);
                 _this.treeData = data.data;
                 return data.data;
@@ -70,6 +70,7 @@ Vue.component('show-tree',{
                 name:data.TYPE_NAME,
                 code:data.TYPE_NO
             }
+            this.$emit('tree-click',this.treeNode);
         },
         filterNode(value, data) {
             if (!value) return true;
