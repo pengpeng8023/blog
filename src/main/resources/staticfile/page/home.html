@@ -127,30 +127,7 @@
 	<!--<script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
 	<script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
 	<script>
-		function dateToString(date){
-			var n = date.getFullYear();
-			var y = date.getMonth()+1;
-			var r = date.getDate();
-			var s = date.getHours();
-			var f = date.getMinutes();
-			var m = date.getSeconds();
-			if(y<10){
-				y= "0"+y
-			}
-			if(r<10){
-				r= "0"+r
-			}
-			if(s<10){
-				s= "0"+s
-			}
-			if(f<10){
-				f= "0"+f
-			}
-			if(m<10){
-				m= "0"+m
-			}
-			return n+"-"+y+"-"+r+" "+s+":"+f+":"+m
-		}
+
 		setInterval(function(){
 			$("#date-time").html(dateToString(new Date()));
 		},1000);
