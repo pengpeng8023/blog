@@ -61,3 +61,34 @@ var JsUtil={
         return true;
     }
 }
+function dateToString(date,type){
+    var n = date.getFullYear();
+    var y = date.getMonth()+1;
+    var r = date.getDate();
+    var s = date.getHours();
+    var f = date.getMinutes();
+    var m = date.getSeconds();
+    if(y<10){
+        y= "0"+y
+    }
+    if(r<10){
+        r= "0"+r
+    }
+    if(s<10){
+        s= "0"+s
+    }
+    if(f<10){
+        f= "0"+f
+    }
+    if(m<10){
+        m= "0"+m
+    }
+    if(type == 'yyyy-MM-dd HH:mm:ss'){
+        return n+"-"+y+"-"+r+" "+s+":"+f+":"+m
+    }else if(type == 'yyyy-MM-dd'){
+        return n+"-"+y+"-"+r
+    }else{
+        return n+y+r
+    }
+
+}
