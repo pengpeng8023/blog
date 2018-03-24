@@ -293,7 +293,6 @@
                     CHECK_PWD: "",
                     ACCOUNT_EMAIL: "",
                     ACCOUNT_PHONE: "",
-                    ACCOUNT_NAME: "",
                     CHECK_CODE: "",
                 },
                 confirm: false,
@@ -350,6 +349,7 @@
                 var params = {};
                 params.verCode = _this.form.CHECK_CODE;
                 params.accountNo = _this.form.ACCOUNT_NO;
+                params.accountName = _this.form.ACCOUNT_NAME;
                 params.accountPwd = _this.form.ACCOUNT_PWD;
                 params.accountPhone = _this.form.ACCOUNT_PHONE;
                 params.accountEmail = _this.form.ACCOUNT_EMAIL;
