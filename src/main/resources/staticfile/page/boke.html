@@ -227,14 +227,15 @@
                 changeDV:function(p){
                     this.dialogVisible = p;
                 },
-				showValue: function(value) {
-					console.log(value);
-				},
 				/*handleEdit: function(index, row) {
 					console.log(index, row);
 				},*/
 				handleDelete: function(index, row) {
+				    var _this = this;
 					console.log(index, row);
+                    invocationMode('get',API.DELETENOTEMANAGEBYNOTENO,'json',{noteNo:row.NOTE_NO},function(){
+						_this.getGirdData();
+                    })
 				},
 				toggleSelection: function(rows) {
 					if(rows) {

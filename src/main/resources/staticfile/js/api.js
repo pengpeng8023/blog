@@ -14,6 +14,7 @@ var API ={
     SAVENOTEMANAGE:_APINAME+"/blog/invokeWebService/saveNoteManage",//保存日记信息
     UPDATENOTEMANAGE:_APINAME+"/blog/invokeWebService/updateNoteManage",//修改日记信息
     GETNOTECONTAIN:_APINAME+"/blog/invokeWebService/getNoteContain",//获取日记内容
+    DELETENOTEMANAGEBYNOTENO:_APINAME+"/blog/invokeWebService/deleteManageByNoteNo",//获取日记内容
 };
 
 function getRootPath(){  
