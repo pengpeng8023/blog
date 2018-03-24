@@ -1,8 +1,6 @@
 <component name="libraryTable">
   <library name="poi-3.9">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../poi.jar包(3.73.83.93.10)版 Apache POI-the Java API for Microsoft Documents/poi-3.9.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>

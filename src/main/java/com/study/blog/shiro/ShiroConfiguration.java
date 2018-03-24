@@ -86,7 +86,7 @@ public class ShiroConfiguration {
         Map<String, Filter> filters = new LinkedHashMap<String, Filter>();
         //配置登录的url和登录成功的url
 
-        shiroFilterFactoryBean.setLoginUrl("/blog/boke");
+        shiroFilterFactoryBean.setLoginUrl("/blog/login");
 
         //配置访问权限
         Map<String, String> filterChainDefinitionManager = new LinkedHashMap<String, String>();
