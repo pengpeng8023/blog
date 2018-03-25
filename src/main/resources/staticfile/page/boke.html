@@ -68,7 +68,7 @@
 										<span style="margin-left: 10px">{{ scope.row.NOTE_TYPE }}</span>
 									</template>
 								</el-table-column>
-								<el-table-column label="标题" width="">
+								<el-table-column label="标题" width="400">
 									<template slot-scope="scope">
 										<span style="margin-left: 10px">{{ scope.row.NOTE_TITLE }}</span>
 									</template>
@@ -97,7 +97,9 @@
 							<el-dialog title="日记信息" :visible.sync="dialogFormVisible" width="80%" :before-close="closeDialogFormVisible">
 								<el-form >
 									<el-form-item label="类型" :label-width="formLabelWidth">
-										<el-input @focus="showTypeTree" v-model="dialog.noteTypeName"></el-input>
+										<el-col :span="4">
+											<el-input @focus="showTypeTree" v-model="dialog.noteTypeName" readonly="true"></el-input>
+										</el-col>
 									</el-form-item>
 									<el-form-item label="标题" :label-width="formLabelWidth">
 										<el-input v-model="dialog.noteTitle" placeholder="标题"></el-input>
@@ -245,7 +247,7 @@
 				    var _this = this;
 					console.log(data);
                     invocationMode('get',API.DELETENOTEMANAGEBYNOTENO,'json',{noteNo:data},function(){
-						_this.getGirdData();
+                        _this.getGirdData();
                     })
 				},
 				showConfirm:function (index, row) {
@@ -325,6 +327,7 @@
 					this.dialog.noteTitle = '';
 					this.dialog.noteNo = '';
 					this.dialog.noteFlag = '1';
+                    this.getGirdData();
 				},
                 showTypeTree:function(){
 					this.dialogVisible = true;

@@ -87,4 +87,8 @@ em {
     line-height: 24px;
     font-size: 14px;
     height: 350px;
+    background: white!important;
+}
+.type_tree_dialog .el-dialog__footer{
+   background: white!important;
 }
