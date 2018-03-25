@@ -59,6 +59,21 @@ public class Test01 {
         int last = calendar.getActualMaximum(Calendar.DATE);
         System.out.println("该月的最后一天"+last);
     }
+    @Test
+    public void operation(){
+        System.out.println(hash(20));
+        System.out.println(-1>>> 20);
+        System.out.println(20>>> 12);
+        System.out.println(20 >>> 7);
+        System.out.println(20>>> 4);
 
 
+    }
+    int hash(int h) {
+        // This function ensures that hashCodes that differ only by
+        // constant multiples at each bit position have a bounded
+        // number of collisions (approximately 8 at default load factor).
+        h ^= (h >>> 20) ^ (h >>> 12);
+        return h ^ (h >>> 7) ^ (h >>> 4);
+    }
 }
