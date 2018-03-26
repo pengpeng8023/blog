@@ -57,22 +57,11 @@ ol{
     color: white!important;
 }
 /************************/
-#date-time{
-    margin: auto;
-    height:20px;
-    line-height: 20px;
-    text-align:center;
-    color: white;
-    font-size: 13px;
-    vertical-align: middle;
-}
+
 #calendar{
     border: 0;
     width: 300px;
     height: 350px;
-    filter: alpha(Opacity=80);
-    -moz-opacity: 0.8;
-    opacity: 0.8;
 }
 .p_input input{
     -webkit-appearance: none;
@@ -91,6 +80,6 @@ ol{
     width: 100%;
 }
 .el-aside, .el-main {
-     overflow: hidden;
+     overflow-x: hidden;
     -webkit-box-sizing: border-box;
 }

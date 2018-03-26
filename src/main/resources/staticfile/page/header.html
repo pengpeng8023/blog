@@ -7,6 +7,16 @@
 		<!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
 		<title></title>
 		<style>
+			#date-time{
+				float: left;
+				margin: auto;
+				height:20px;
+				line-height: 20px;
+				text-align:center;
+				color: red;
+				font-size: 13px;
+				vertical-align: middle;
+			}
 			#header {
 				color: white;
 				font-family: '宋体';
@@ -26,10 +36,13 @@
 	<body>
 		<div id="app">
 			<el-row>
-				<el-col :span="12">
+				<el-col :span="5">
 					<div id="header">
 						欢迎来到我的博客·即将开启梦幻之旅
 					</div>
+				</el-col>
+				<el-col :span="7">
+					<div id="date-time"></div>
 				</el-col>
 				<el-col :span="12">
 					<div id="login-regist-div">
@@ -52,6 +65,9 @@
 	<script src="../js/api.js"></script>
 	<script src="../js/frame.js"></script>
 	<script>
+        setInterval(function(){
+            $("#date-time").html(JsUtil.dateToString(new Date(),'yyyy-MM-dd HH:mm:ss'));
+        },1000);
 		var vm = new Vue({
 			el: '#app',
 			data: function() {

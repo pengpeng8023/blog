@@ -19,7 +19,6 @@
 				</el-header>
 				<el-container>
 					<el-aside width="302px">
-						<div id="date-time"></div>
 						<iframe scrolling="no" src="../calendar/index.html" id='calendar'></iframe>
 						<el-row style="margin-bottom: 10px">
 							<el-col :span="6" class="p_input">
@@ -33,7 +32,7 @@
 								</el-select>
 							</el-col>
 							<el-col :span="6" class="p_input">
-								<el-input placeholder="请选择类型" @focus="showTypeTree" v-model="noteTypeName" readonly="true"></el-input>
+								<el-input placeholder="请选择类型" @focus="showTypeTree" v-model="noteTypeName" readonly="readonly"></el-input>
 							</el-col>
 							<el-col :span="12" class="p_input">
 								<el-input placeholder="请输入内容" v-model="searchText" class="input-with-select">
@@ -42,7 +41,7 @@
 							</el-col>
 						</el-row>
 						<div >
-							<div style="height: 250px;background: white">
+							<div style="height: 254px;background: white">
 								<ol style="list-style-type:none;">
 									<li v-for="(item,index) in tableData" style="position: relative;">
 										<i>{{index+1}}、</i>
@@ -84,13 +83,12 @@
 	<script type="text/javascript" src="../js/typeTree.js"></script>
 	<script>
 
-		setInterval(function(){
-			$("#date-time").html(JsUtil.dateToString(new Date(),'yyyy-MM-dd HH:mm:ss'));
-		},1000);
+
 		var vm = new Vue({
 			el: '#app',
 			data: function() {
 				return {
+                    readonly:true,
                     tableData:[],
                     contain:'',
                     noteTypeName:'',

@@ -68,7 +68,7 @@
 										<span style="margin-left: 10px">{{ scope.row.NOTE_TYPE }}</span>
 									</template>
 								</el-table-column>
-								<el-table-column label="标题" width="400">
+								<el-table-column label="标题" width="">
 									<template slot-scope="scope">
 										<span style="margin-left: 10px">{{ scope.row.NOTE_TITLE }}</span>
 									</template>
@@ -98,7 +98,7 @@
 								<el-form >
 									<el-form-item label="类型" :label-width="formLabelWidth">
 										<el-col :span="4">
-											<el-input @focus="showTypeTree" v-model="dialog.noteTypeName" readonly="true"></el-input>
+											<el-input @focus="showTypeTree" v-model="dialog.noteTypeName" readonly="readonly"></el-input>
 										</el-col>
 									</el-form-item>
 									<el-form-item label="标题" :label-width="formLabelWidth">
@@ -172,6 +172,7 @@
 			el: '#app',
 			data: function() {
 				return {
+                    readonly:true,
 					visible: "false",
 					value1: '',
 					tableData: Array(pageSize).fill(item),
