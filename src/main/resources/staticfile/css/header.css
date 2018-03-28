@@ -1,0 +1,23 @@
+#date-time{
+    float: left;
+    margin: auto;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    vertical-align: middle;
+}
+#header {
+    color: white;
+    font-family: '宋体';
+    font-size: 20px;
+    text-align: left;
+    /*filter: alpha(Opacity=80);*/
+    /*-moz-opacity: 0.7;*/
+    /*opacity: 0.7;*/
+}
+#login-regist-div {
+    line-height: 50px;
+    text-align: right;
+}
