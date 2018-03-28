@@ -94,7 +94,7 @@
 									</div>
 								</el-col>
 							</el-row>
-							<el-dialog title="日记信息" :visible.sync="dialogFormVisible" width="80%" :before-close="closeDialogFormVisible">
+							<el-dialog title="日记信息" :visible.sync="dialogFormVisible" width="80%" :before-close="closeDialogFormVisible" :modal="false">
 								<el-form >
 									<el-form-item label="类型" :label-width="formLabelWidth">
 										<el-col :span="4">
@@ -113,7 +113,7 @@
 									<el-button type="primary" @click="saveNoteManage">确 定</el-button>
 								</div>
 							</el-dialog>
-							<el-dialog class="p_confirm" title="提示" :visible.sync="confirmVisible" >
+							<el-dialog class="p_confirm" title="提示" :visible.sync="confirmVisible" :modal="false">
 								<span>是否确认删除【{{delNoteTitle}}】？</span>
 								<span slot="footer" class="dialog-footer">
 									<el-button type="primary" size="mini" @click="confirmTrue">确 定</el-button>
