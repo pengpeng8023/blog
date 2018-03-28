@@ -1,5 +1,6 @@
 body{
     background-image: url(../img/login1.jpg);
+    opacity: 0.7;
 }
 ol{
     display: block;
