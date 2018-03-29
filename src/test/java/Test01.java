@@ -1,6 +1,24 @@
+import org.apache.commons.io.FileUtils;
+import org.apache.poi.hwpf.HWPFDocument;
+import org.apache.poi.hwpf.converter.PicturesManager;
+import org.apache.poi.hwpf.converter.WordToHtmlConverter;
+import org.apache.poi.hwpf.usermodel.Picture;
+import org.apache.poi.hwpf.usermodel.PictureType;
+import org.apache.poi.hwpf.usermodel.Range;
 import org.junit.Test;
+import org.w3c.dom.Document;
 import redis.clients.jedis.*;
 
+import javax.servlet.ServletOutputStream;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import java.io.*;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -75,5 +93,76 @@ public class Test01 {
         // number of collisions (approximately 8 at default load factor).
         h ^= (h >>> 20) ^ (h >>> 12);
         return h ^ (h >>> 7) ^ (h >>> 4);
+    }
+    @Test
+    public void test001() throws Exception {
+        Test01.deletefile("E:\\app");
+    }
+
+    public static boolean deletefile(String delpath) throws Exception {
+        try {
+
+            File file = new File(delpath);
+            // 当且仅当此抽象路径名表示的文件存在且 是一个目录时，返回 true
+            if (!file.isDirectory()) {
+                file.delete();
+            } else if (file.isDirectory()) {
+                String[] filelist = file.list();
+                for (int i = 0; i < filelist.length; i++) {
+                    File delfile = new File(delpath + "\\" + filelist[i]);
+                    if (!delfile.isDirectory()) {
+                        delfile.delete();
+                    } else if (delfile.isDirectory()) {
+                        deletefile(delpath + "\\" + filelist[i]);
+                    }
+                }
+            }
+
+        } catch (FileNotFoundException e) {
+            System.out.println("deletefile() Exception:" + e.getMessage());
+        }
+        return true;
+    }
+    @Test
+    public void DocToHtml() throws ParserConfigurationException, IOException, TransformerException {
+        final String path = "E:\\";
+        final String file = "wordTemplate.doc";
+        InputStream input = new FileInputStream(path + file);
+        HWPFDocument wordDocument = new HWPFDocument(input);
+        WordToHtmlConverter wordToHtmlConverter = new WordToHtmlConverter(
+                DocumentBuilderFactory.newInstance().newDocumentBuilder()
+                        .newDocument());
+        wordToHtmlConverter.setPicturesManager(new PicturesManager() {
+            public String savePicture(byte[] content, PictureType pictureType,
+                                      String suggestedName, float widthInches, float heightInches) {
+                return suggestedName;
+            }
+        });
+        wordToHtmlConverter.processDocument(wordDocument);
+        List pics = wordDocument.getPicturesTable().getAllPictures();
+        if (pics != null) {
+            for (int i = 0; i < pics.size(); i++) {
+                Picture pic = (Picture) pics.get(i);
+                try {
+                    pic.writeImageContent(new FileOutputStream(path
+                            + pic.suggestFullFileName()));
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        Document htmlDocument = wordToHtmlConverter.getDocument();
+        ByteArrayOutputStream outStream = new ByteArrayOutputStream();
+        DOMSource domSource = new DOMSource(htmlDocument);
+        StreamResult streamResult = new StreamResult(outStream);
+        TransformerFactory tf = TransformerFactory.newInstance();
+        Transformer serializer = tf.newTransformer();
+        serializer.setOutputProperty(OutputKeys.ENCODING, "utf-8");
+        serializer.setOutputProperty(OutputKeys.INDENT, "yes");
+        serializer.setOutputProperty(OutputKeys.METHOD, "html");
+        serializer.transform(domSource, streamResult);
+        outStream.close();
+        String content = new String(outStream.toByteArray());
+        FileUtils.writeStringToFile(new File(path, "wordTemplate.html"), content, "utf-8");
     }
 }
