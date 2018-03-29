@@ -9,7 +9,8 @@ Vue.component('type-tree',{
         class='type_tree_dialog'
         :visible.sync='dialogVisible'
         title='选择类型'
-        size='tiny'>
+        size='tiny'
+        :modal='false'>
 		<el-tree
 	            :data='treeData'
 	            :props='defaultProps'
