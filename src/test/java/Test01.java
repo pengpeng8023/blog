@@ -124,45 +124,33 @@ public class Test01 {
         return true;
     }
     @Test
-    public void DocToHtml() throws ParserConfigurationException, IOException, TransformerException {
-        final String path = "E:\\";
-        final String file = "wordTemplate.doc";
-        InputStream input = new FileInputStream(path + file);
-        HWPFDocument wordDocument = new HWPFDocument(input);
-        WordToHtmlConverter wordToHtmlConverter = new WordToHtmlConverter(
-                DocumentBuilderFactory.newInstance().newDocumentBuilder()
-                        .newDocument());
-        wordToHtmlConverter.setPicturesManager(new PicturesManager() {
-            public String savePicture(byte[] content, PictureType pictureType,
-                                      String suggestedName, float widthInches, float heightInches) {
-                return suggestedName;
-            }
-        });
-        wordToHtmlConverter.processDocument(wordDocument);
-        List pics = wordDocument.getPicturesTable().getAllPictures();
-        if (pics != null) {
-            for (int i = 0; i < pics.size(); i++) {
-                Picture pic = (Picture) pics.get(i);
-                try {
-                    pic.writeImageContent(new FileOutputStream(path
-                            + pic.suggestFullFileName()));
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-        Document htmlDocument = wordToHtmlConverter.getDocument();
-        ByteArrayOutputStream outStream = new ByteArrayOutputStream();
-        DOMSource domSource = new DOMSource(htmlDocument);
-        StreamResult streamResult = new StreamResult(outStream);
-        TransformerFactory tf = TransformerFactory.newInstance();
-        Transformer serializer = tf.newTransformer();
-        serializer.setOutputProperty(OutputKeys.ENCODING, "utf-8");
-        serializer.setOutputProperty(OutputKeys.INDENT, "yes");
-        serializer.setOutputProperty(OutputKeys.METHOD, "html");
-        serializer.transform(domSource, streamResult);
-        outStream.close();
-        String content = new String(outStream.toByteArray());
-        FileUtils.writeStringToFile(new File(path, "wordTemplate.html"), content, "utf-8");
+    public void testBinaryTree(){
+        BinaryTree bt = new BinaryTree(52);
+        bt.insert(580);
+        bt.insert(12);
+        bt.insert(50);
+        bt.insert(58);
+        bt.insert(9);
+        bt.insert(888);
+        bt.insert(248);
+        bt.insert(32);
+        bt.insert(666);
+        bt.insert(455);
+        bt.insert(777);
+        bt.insert(999);
+        bt.inOrderTraverse();
+        bt.preOrderTraverse();
+        bt.postOrderTraverse();
+        System.out.println(bt.findKey(32));
+        System.out.println(bt.findKey(81));
+        System.out.println("最小值:" + bt.getMinValue());
+ //     bt.delete(32);      //删除叶子节点
+ //     bt.delete(50);      //删除只有一个左子节点的节点
+//      bt.delete(248);      //删除只有一个右子节点的节点
+ //    bt.delete(580);      //删除有两个子节点的节点，且后继节点为删除节点的右子节点的左后代
+//      bt.delete(888);      //删除有两个子节点的节点，且后继节点为删除节点的右子节点
+      bt.delete(52);       //删除有两个子节点的节点，且删除节点为根节点
+
+        bt.inOrderTraverse();
     }
 }
