@@ -8,17 +8,7 @@ import java.util.*;
  * Created by pengp on 2018/3/30.
  */
 public class LeetCode {
-    @Test
-    public void Test01(){
-        String arr[] ={"gin", "zen", "gig", "msg"};
-        //System.out.println(Arrays.toString(twoSum(arr,4)));
 
-        //System.out.println(numJewelsInStones("aA","aAAbbbb"));
-        //System.out.println(hammingDistance(1,4));
-        //System.out.println(reverseString("12dw23dw12grg"));
-        //System.out.println(uniqueMorseRepresentations(arr));
-        System.out.println(selfDividingNumbers(9,22));
-    }
     public int[] twoSum(int[] nums, int target) {
         for(int i=0;i<nums.length;i++){
             for(int j=i+1;j<nums.length;j++){
@@ -90,6 +80,7 @@ public class LeetCode {
         }
         return list;
     }
+    /*二叉树的最大深度*/
     int maxDepth(TreeNode root) {
         if(root == null){
             return 0;
@@ -97,5 +88,354 @@ public class LeetCode {
         int depth_left = maxDepth(root.left) + 1;
         int depth_right = maxDepth(root.right) + 1;
         return depth_left > depth_right ? depth_left : depth_right;
+    }
+    /*移动路线为圈 遍历 截串 数组 替换*/
+    public boolean judgeCircle(String moves) {
+        int rs = moves.length() - moves.replace("R","").length();
+        int ls = moves.length() - moves.replace("L","").length();
+        int us = moves.length() - moves.replace("U","").length();
+        int ds = moves.length() - moves.replace("D","").length();
+        return rs == ls && us == ds;
+    }
+    //数组拆分
+    public int arrayPairSum(int[] nums) {
+        Arrays.sort(nums);
+        int sum = 0;
+        for(int i=0;i<nums.length;i=i+2){
+            sum += nums[i];
+        }
+        return sum;
+    }
+    //二进制加法
+
+    /*
+     * 第一步：相加各位的值，不算进位，得到010，二进制每位相加就相当于各位做异或操作，101^111。
+     * 第二步：计算进位值，得到1010，相当于各位做与操作得到101，再向左移一位得到1010，(101&111)<<1。
+     * 第三步重复上述两步， 各位相加 010^1010=1000，进位值为100=(010&1010)<<1。
+     * 继续重复上述两步：1000^100 = 1100，进位值为0，跳出循环，1100为最终结果。
+     */
+    public int getSum(int a, int b) {
+        while(b!=0){
+            int t = a ^ b;
+            b = (a&b)<<1;
+            a = t;
+        }
+        return a;
+    }
+    //写字符串需要的行数
+    public int[] numberOfLines(int[] widths, String S) {
+        int row = 1;
+        int count = 0;
+        char[] chars = S.toCharArray();
+        for (int i=0;i<chars.length;i++){
+            count += widths[chars[i]-97];
+            if (count>100){
+                row ++;
+                count = widths[chars[i]-97];
+            }
+        }
+
+        return new int[]{row,count};
+    }
+    //分糖果
+    public int distributeCandies(int[] candies) {
+        Set set = new HashSet();
+        int len=candies.length;
+        for(int i=0;i<len;i++){
+            set.add(candies[i]);
+        }
+        return set.size()>=len/2?len/2:set.size();
+    }
+    class Employee{
+        int id;
+        int importance;
+        List<Integer> subordinates;
+    }
+    public int getImportance(List<Employee> employees, int id) {
+        int sum = 0;
+        for(int i=0;i<employees.size();i++){
+            if(employees.get(i).id == id){
+                sum+=employees.get(i).importance;
+                for(int j=0;j<employees.get(i).subordinates.size();j++){
+                    sum += getImportance(employees,employees.get(i).subordinates.get(j));
+                }
+            }
+
+        }
+        return sum;
+    }
+    // Excel表列序号
+    public int titleToNumber(String s) {
+        int sum = 0;
+        char[] chars = s.toCharArray();
+        int len = chars.length;
+        for (int i=len-1;i>=0;i--){
+           sum += (chars[i]-64)*Math.pow(26,(len-i-1));
+        }
+        return sum;
+    }
+    //键盘行
+    public String[] findWords(String[] words) {
+        String rex = "[qwertyuiop]*|[asdfghjkl]*|[zxcvbnm]*";
+        List<String> list = new ArrayList<>();
+        for(int i=0;i<words.length;i++){
+            if (words[i].toLowerCase().matches(rex)){
+                list.add(words[i]);
+            }
+        }
+        String[] strs = new String[list.size()];
+
+        return list.toArray(strs);
+    }
+    // 托普利茨矩阵
+    public boolean isToeplitzMatrix(int[][] matrix) {
+        int len = matrix.length;
+        for(int i=len-1;i>0;i--){
+            for(int j=matrix[i].length-1;j>0;j--){
+                if(matrix[i-1][j-1]!=matrix[i][j]){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    //二叉树的层平均值
+    public List<Double> averageOfLevels(TreeNode root) {
+        List<Double> list = new ArrayList<>();
+        Queue<TreeNode> q = new LinkedList<>();
+        if (root == null){
+            return list;
+        }
+        q.add(root);
+        while (!q.isEmpty()){
+            int n = q.size();
+            double sum = 0;
+            for (int i=0;i<n;i++){
+                TreeNode node = q.poll();
+                sum +=node.val;
+                if (node.left!=null) q.offer(node.left);
+                if (node.right!=null) q.offer(node.right);
+            }
+            list.add(sum/n);
+        }
+        return list;
+    }
+    //取补数
+    public int findComplement(int num) {
+        int max = 0;
+        int j = 0;
+        while (max<num){
+            max += Math.pow(2,j);
+            j++;
+        }
+        return max - num;
+    }
+    public List<String> fizzBuzz(int n) {
+        List<String> list = new ArrayList();
+        for(int i=1;i<=n;i++){
+            if(i%5==0 && i%3==0){
+                list.add("FizzBuzz");
+            }else if(i%3==0){
+                list.add("Fizz");
+            }else if(i%5 ==0){
+                list.add("Buzz");
+            }else{
+                list.add(Integer.valueOf(i).toString());
+            }
+        }
+        return list;
+    }
+    //各位相加
+    public int addDigits(int num) {
+        //return 1+ (num -1) %9;
+        return num == 0?0:(num % 9==0?9:(num % 9));
+    }
+    //重组矩阵
+    public int[][] matrixReshape(int[][] nums, int r, int c) {
+        int n = nums.length,m=nums[0].length;
+        if (r*c != n*m) return nums;
+        int[][] result = new int[r][c];
+        for (int i = 0;i<r*c;i++){
+            result[i/c][i%c] = nums[i/m][i%m];
+        }
+        return result;
+    }
+    //计数二进制子串
+    public int countBinarySubstrings(String s) {
+        //先定义当前树的数量，前一个数的数量，结果数
+        int preCount=0,curCount=1,result=0;
+        for(int i =0;i<s.length()-1;i++){
+            //如果后面数字和前面数字相同，当前数加1
+            if(s.charAt(i) == s.charAt(i+1)) curCount++;
+            else {
+                //如果不同那么当前数量设置给前面数量，当前数量设置成1
+                preCount = curCount;
+                curCount = 1;
+            }
+            //判断前面数量是否比当前数量多，是的话就是需要的结果，加1
+            if (preCount >= curCount) result++;
+        }
+        return result;
+    }
+    //最大连续1的数量
+    public int findMaxConsecutiveOnes(int[] nums) {
+        int result = 0,curNum=0,len=nums.length;
+        for(int i=0;i<len;i++){
+            if(nums[i] == 1) curNum++;
+            else {
+                curNum = 0;
+            }
+            result = result > curNum?result:curNum;
+        }
+        return result;
+    }
+    //棒球比赛
+    public int calPoints(String[] ops) {
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        int sum = 0;
+        for (String op:ops){
+            if("C".equals(op)){
+                sum -= list.removeLast();
+            }else if("D".equals(op)){
+                list.add(list.peekLast()*2);
+                sum += list.peekLast();
+            }else if("+".equals(op)){
+                list.add(list.peekLast()+list.get(list.size()-2));
+                sum += list.peekLast();
+            }else{
+                list.add(Integer.valueOf(op));
+                sum +=list.peekLast();
+            }
+        }
+        return sum;
+    }
+    class NumArray {
+        int[] nums;
+        public NumArray(int[] nums) {
+            for(int i=1;i<nums.length;i++) nums[i] += nums[i-1];
+            this.nums = nums;
+        }
+
+        public int sumRange(int i, int j) {
+            if (i==0) return this.nums[j];
+            return this.nums[j] - this.nums[i-1];
+        }
+    }
+    //反转二叉树
+    public TreeNode invertTree(TreeNode root) {
+        if(root == null) return null;
+        else if (root.left == null && root.right == null) return root;
+        else if (root.left == null){
+            root.left = root.right;
+            root.right = null;
+        }else if(root.right == null){
+            root.right = root.left;
+            root.left = null;
+        }else{
+            TreeNode temp = root.right;
+            root.right = root.left;
+            root.left = temp;
+        }
+        invertTree(root.left);
+        invertTree(root.right);
+        return root;
+    }
+    //将有序数组转换为二叉搜索树
+    public TreeNode sortedArrayToBST(int[] nums) {
+        if (nums.length == 0) return null;
+        TreeNode treeNode = helper(nums,0,nums.length-1);
+        return treeNode;
+
+    }
+    public TreeNode helper(int[] nums,int low,int high){
+        if (low >= high) { // Done
+            return null;
+        }
+        int mid = (high+low)/2;
+        TreeNode node = new TreeNode(nums[mid]);
+        node.left = helper(nums,low,mid-1);
+        node.right = helper(nums,mid+1,high);
+        return node;
+    }
+    //移动零
+    public void moveZeroes(int[] nums) {
+        int count=0;
+        int len = nums.length;
+        for(int i=0;i<len;i++)
+            if (nums[i] != 0)
+                nums[count++] = nums[i];
+        for(;count<len;count++){
+            nums[count] = 0;
+        }
+    }
+    //合并有序链表
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        if (l1 == null) return l2;
+        if (l2 == null) return l1;
+        ListNode merger;
+        if (l1.val < l2.val){
+            merger = l1;
+            merger.next = mergeTwoLists(l1.next,l2);
+        }else {
+            merger = l2;
+            merger.next = mergeTwoLists(l2.next,l1);
+        }
+        return merger;
+    }
+    public class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) { val = x; }
+    }
+    @Test
+    public void Test01(){
+        String arr[] ={"gin", "zen", "gig", "msg"};
+        //System.out.println(Arrays.toString(twoSum(arr,4)));
+        //System.out.println(numJewelsInStones("aA","aAAbbbb"));
+        //System.out.println(hammingDistance(1,4));
+        //System.out.println(reverseString("12dw23dw12grg"));
+        //System.out.println(uniqueMorseRepresentations(arr));
+        //System.out.println(selfDividingNumbers(9,22));
+        //System.out.println(judgeCircle("UDLLR"));
+        //System.out.println(arrayPairSum(new int[]{1,3,5,7,2,4,6,8}));
+        //System.out.println(getSum(5,3));
+        //System.out.println(numberOfLines(new int[]{4,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10},"bbbcccdddaaa"));
+        List list = new ArrayList();
+        List list1 = new ArrayList();
+        Employee e1 = new Employee();
+        Employee e2 = new Employee();
+        //[[1,2,[2]], [2,3,[]]]
+
+        e1.id = 1;
+        e1.importance = 2;
+        list1.add(2);
+        e1.subordinates = list1;
+        e2.id = 2;
+        e2.importance = 3;
+        e2.subordinates = new ArrayList<>();
+        list.add(e1);
+        list.add(e2);
+        //System.out.println(getImportance(list,1));
+        //System.out.println(titleToNumber("AA"));
+        //System.out.println(findWords(new String[]{"dassds","assd","ecd"}));
+
+        int [][] matrix = new int[][]{{1,2,3,4},{5,1,2,3},{9,5,1,2}};
+        //System.out.println(isToeplitzMatrix(matrix));
+       // System.out.println(findComplement(4));
+        //System.out.println(fizzBuzz(4));
+        //System.out.println(addDigits(3625));
+        //System.out.println(countBinarySubstrings("00110011"));
+        //System.out.println(findMaxConsecutiveOnes(new int[]{1,1,1,1,1,0,0,1,1,1,}));
+        BinaryTree root = new BinaryTree(4);
+        root.insert(2);
+        root.insert(7);
+        root.insert(1);
+        root.insert(3);
+        root.insert(6);
+        root.insert(9);
+        //invertTree(root.root);
+        //sortedArrayToBST(new int[]{-10,-3,0,5,9});
+        int[] ints =new int[]{0,0,1};
+        moveZeroes(ints);
     }
 }

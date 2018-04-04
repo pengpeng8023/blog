@@ -6,7 +6,7 @@ import java.util.Stack;
  * Created by pengp on 2018/3/30.
  */
 public class BinaryTree {
-    private TreeNode root = null;
+    public TreeNode root = null;
     BinaryTree(int val){
         root = new TreeNode(val);
         root.left = null;
