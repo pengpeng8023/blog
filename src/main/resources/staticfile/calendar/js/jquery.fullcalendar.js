@@ -919,7 +919,7 @@
 						//鼠标移动展示
 						var ct = '<font color="#ffffff" style="font-size:9pt;">' + inf.sYear
 							 + ' 年 ' + inf.sMonth + ' 月 ' + inf.sDay + ' 日<br>星期' + inf.week
-							 + '<br><font color="white"> ' + monthName[inf.lMonth - 1] + ' 月 ' + cDay(inf.lDay, inf.lMonth,true)
+							 + '<br><font color="white"> ' + monthName[inf.lMonth - 1] + cDay(inf.lDay, inf.lMonth,true)
 							 + ' 日</font><br><font color="yellow">' + inf.cYear + '年 ' + inf.cMonth + '月 ' + inf.cDay + '日</font></font>';
 						detail.html(ct);
 			
