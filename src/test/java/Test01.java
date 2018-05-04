@@ -1,3 +1,4 @@
+import com.study.blog.loginAndRegister.service.TestRedisService;
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.hwpf.HWPFDocument;
 import org.apache.poi.hwpf.converter.PicturesManager;
@@ -6,6 +7,7 @@ import org.apache.poi.hwpf.usermodel.Picture;
 import org.apache.poi.hwpf.usermodel.PictureType;
 import org.apache.poi.hwpf.usermodel.Range;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.w3c.dom.Document;
 import redis.clients.jedis.*;
 
@@ -29,6 +31,8 @@ import java.util.*;
  * Created by pengp on 2018/1/22.
  */
 public class Test01 {
+    @Autowired
+    private TestRedisService testRedisService;
     @Test
     public void jedis(){
         Jedis jedis = new Jedis("192.168.177.11", 7000);
@@ -153,4 +157,12 @@ public class Test01 {
 
         bt.inOrderTraverse();
     }
+
+    @Test
+    public void StringTest(){
+        String a = "DSADASD_DADAS|SADASD_DASD";
+        System.out.println(a.substring(1));
+    }
+
+
 }
