@@ -32,7 +32,7 @@ public class RedisServiceImpl implements IRedisService{
         });
         return result;
     }
-
+    @Override
     public String get(final String key){
         String result = redisTemplate.execute(new RedisCallback<String>() {
             @Override

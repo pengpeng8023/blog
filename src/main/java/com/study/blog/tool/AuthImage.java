@@ -23,6 +23,7 @@ import javax.servlet.http.HttpSession;
 public class AuthImage extends HttpServlet implements Servlet {
     static final long serialVersionUID = 1L;
     private Logger logger = Logger.getLogger(AuthImage.class);
+    @Override
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setHeader("Pragma", "No-cache");
         response.setHeader("Cache-Control", "no-cache");
