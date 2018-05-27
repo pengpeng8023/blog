@@ -387,6 +387,106 @@ public class LeetCode {
         ListNode next;
         ListNode(int x) { val = x; }
     }
+    //岛屿的周长
+    public int islandPerimeter(int[][] grid) {
+        int sum = 0;
+        for(int i=0;i<grid.length;i++){
+            for(int j=0;j<grid[i].length;j++){
+                if(grid[i][j] == 1){
+                    sum +=4;
+                    if(i<grid.length-1){
+                        if(grid[i][j]==grid[i+1][j]){
+                            sum -=2;
+                        }
+                    }
+                    if(j<grid[i].length-1){
+                        if(grid[i][j]==grid[i][j+1]){
+                            sum -=2;
+                        }
+                    }
+                }
+
+            }
+        }
+        return sum;
+    }
+    //Range Addition II
+    public int maxCount(int m, int n, int[][] ops) {
+        return 0;
+    }
+    //大写判断
+    public boolean detectCapitalUse(String word) {
+        String wordUp = word.toUpperCase();
+        String wordLow = word.toLowerCase();
+        if(wordUp.equals(word) || word.equals(wordLow))
+            return true;
+        if(wordUp.substring(0,1).equals(word.substring(0,1)) && wordLow.substring(1).equals(word.substring(1)))
+            return true;
+        return false;
+    }
+    //数数并说
+    public String countAndSay(int n) {
+        return "";
+    }
+    /**
+     * 需求：
+     * 对逗号分隔的一组单词根据如下进行分组并输出(需要去除重复单词);
+     * 字符串由相同个数的相同字符组成,比如,opt和pot视为一组,
+     * 其中,输入的数据保证单词内不存在重复的字符
+     * [实例]:输入:pot,max,tpo,hi,hide,ih,pot
+     * 输出：opt,tpo,pot,
+     *       hi,ih
+     *       max
+     *       hide
+     */
+
+    public List fenzu(String str){
+        long t1 = System.currentTimeMillis();
+        List<List<String>> list = new ArrayList<>();
+        String [] arr1 = str.split(",");
+        for (String s:arr1){
+            boolean flag = true;
+            label:
+            for (int i=0;i<list.size();i++){
+                for (int j=0;j<list.get(i).size();j++){
+                    if (s.equals(list.get(i).get(j))) {
+                        flag =false;
+                        break label;
+                    }
+                }
+                byte[] b1=list.get(i).get(0).getBytes();
+                byte[] b2=s.getBytes();
+                Arrays.sort(b1);
+                Arrays.sort(b2);
+                if (new String(b1).equals(new String(b2))){
+                    flag =false;
+                    list.get(i).add(s);
+                    break label;
+                }
+            }
+            if(flag) {
+                List<String> l = new ArrayList<>();
+                l.add(s);
+                list.add(l);
+            }
+
+        }
+        System.out.println(System.currentTimeMillis()-t1);
+        return list;
+    }
+    //求最大面积三角形
+    public double largestTriangleArea(int[][] points) {
+        double maxArea = 0;
+        for(int[] i:points){
+            for (int[] j:points){
+                for (int[] k:points){
+                    double area = 0.5*Math.abs(i[0]*j[1]+j[0]*k[1]+k[0]*i[1]-i[0]*k[1]-j[0]*i[1]-k[0]*j[1]);
+                    maxArea = Math.max(maxArea,area);
+                }
+            }
+        }
+        return maxArea;
+    }
     @Test
     public void Test01(){
         String arr[] ={"gin", "zen", "gig", "msg"};
@@ -436,6 +536,15 @@ public class LeetCode {
         //invertTree(root.root);
         //sortedArrayToBST(new int[]{-10,-3,0,5,9});
         int[] ints =new int[]{0,0,1};
-        moveZeroes(ints);
+        //moveZeroes(ints);
+        int[][] grid = new int[][]{
+                                    {0,1,0,0},
+                                    {1,1,1,1},
+                                    {0,1,1,0},
+                                    {1,1,1,0}};
+        //System.out.println(islandPerimeter(grid));
+        //System.out.println(detectCapitalUse("F"));
+        //System.out.println(fenzu("pot,max,tpo,hi,hide,ih,pot,opt,hide,hdie"));
+        System.out.println(largestTriangleArea(new int[][]{{0,0},{0,1},{1,0}}));
     }
 }
