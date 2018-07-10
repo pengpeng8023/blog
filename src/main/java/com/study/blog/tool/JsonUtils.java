@@ -17,10 +17,10 @@ import java.util.Map;
 
 
 public class JsonUtils {
-    private final static Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
+    private final static Gson GSON = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
 
     public static Gson getInstance(){
-        return gson;
+        return GSON;
     }
 
     public static void main(String[] args) {
@@ -81,9 +81,9 @@ public static <T> List<T> json2List(String jsonStr, Class<T> objectClass){
      * @throws Exception
      */
     public static Object mapToObject(Map<String, Object> map, Class<?> beanClass) throws Exception {
-        if (map == null)
+        if (map == null){
             return null;
-
+        }
         Object obj = beanClass.newInstance();
 
         BeanUtils.populate(obj, map);
@@ -97,9 +97,9 @@ public static <T> List<T> json2List(String jsonStr, Class<T> objectClass){
      * @return
      */
     public static Map<?, ?> objectToMap(Object obj) {
-        if(obj == null)
+        if(obj == null) {
             return null;
-
+        }
         return new BeanMap(obj);
     }
 

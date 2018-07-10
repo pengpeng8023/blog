@@ -117,7 +117,9 @@ public class BlogServerController {
      * @throws
      */
     private void extendParamMap(Map paramMap,HttpSession session){
-        if(paramMap == null) paramMap = new HashMap<>();
+        if(paramMap == null){
+            paramMap = new HashMap<>();
+        }
         UserBo userBo = null;
         try{
             userBo = userUtilService.getUserBo(session);

@@ -236,9 +236,10 @@ public class BlogServerServiceImpl implements IBlogServerService {
             serverConfigBo = (ServerConfigBo) JsonUtils.mapToObject(cacheObj,ServerConfigBo.class);
         }
         if (serverConfigBo == null
-                || StringUtils.isEmpty(serverConfigBo.getId()))
+                || StringUtils.isEmpty(serverConfigBo.getId())){
             throw new RuntimeException("未配置 P_SERVER_CONFIG表中" + method
                     + "方法信息或未启用");
+        }
         return serverConfigBo;
     }
 
@@ -268,8 +269,9 @@ public class BlogServerServiceImpl implements IBlogServerService {
             redisService.setMap(key, sqlConfigMap);
         }
         if (sqlConfigMap == null
-                || StringUtils.isEmpty(sqlConfigMap.get("sql")))
-            throw new RuntimeException("未配置 P_SQL_CONFIG表中" + eleNo + "配置信息或未启用");
+                || StringUtils.isEmpty(sqlConfigMap.get("sql"))){throw new RuntimeException("未配置 P_SQL_CONFIG表中" + eleNo + "配置信息或未启用");
+        }
+
         return sqlConfigMap;
     }
 
@@ -305,8 +307,9 @@ public class BlogServerServiceImpl implements IBlogServerService {
             HashMap<String, Object> paramTotal) throws Exception {
 
         dao.execSqlWithProc(paramTotal);
-        if (paramTotal.containsKey(SQL_OUT_MSG_NAME))
+        if (paramTotal.containsKey(SQL_OUT_MSG_NAME)){
             logger.info(paramTotal.get(SQL_OUT_MSG_NAME));
+        }
 
         paramTotal.remove("sql");
 
