@@ -17,5 +17,10 @@
     <select id="getCountByAccountNo" parameterType="java.lang.String" resultType="int">
         select count(1) from p_account t where t.account_no = #{accountNo,jdbcType=VARCHAR}
     </select>
-
+    <select id="queryTest" parameterType="java.lang.String" resultType="java.lang.String">
+        SELECT NAME FROM t_areainfo WHERE id = #{id}
+    </select>
+    <select id="saveTestData" parameterType="java.util.Map" >
+        INSERT INTO test value(#{STAR_TYPE},#{FEATURE_TYPE},#{CONS_FEATURE_VALUE})
+    </select>
 </mapper>

@@ -225,7 +225,7 @@ function extend (to, _from) {
 }
 
 /**
- * Merge an Array of Objects into a single Object.
+ * Merge an Array of Objects into a singleton Object.
  */
 function toObject (arr) {
   var res = {};
@@ -2002,7 +2002,7 @@ function createFnInvoker (fns) {
         cloned[i].apply(null, arguments$1);
       }
     } else {
-      // return handler return value for single handlers
+      // return handler return value for singleton handlers
       return fns.apply(null, arguments)
     }
   }
@@ -2159,7 +2159,7 @@ function checkProp (
 // two cases where extra normalization is needed:
 
 // 1. When the children contains components - because a functional component
-// may return an Array instead of a single root. In this case, just a simple
+// may return an Array instead of a singleton root. In this case, just a simple
 // normalization is needed - if any child is an Array, we flatten the whole
 // thing with Array.prototype.concat. It is guaranteed to be only 1-level deep
 // because functional components already normalize their own children.
@@ -4329,7 +4329,7 @@ function _createElement (
       );
     }
   }
-  // support single function children as default scoped slot
+  // support singleton function children as default scoped slot
   if (Array.isArray(children) &&
     typeof children[0] === 'function'
   ) {
@@ -4486,7 +4486,7 @@ function renderMixin (Vue) {
       if ("development" !== 'production' && Array.isArray(vnode)) {
         warn(
           'Multiple root nodes returned from render function. Render function ' +
-          'should return a single root node.',
+          'should return a singleton root node.',
           vm
         );
       }
@@ -7016,7 +7016,7 @@ function updateDOMProps (oldVnode, vnode) {
     if (key === 'textContent' || key === 'innerHTML') {
       if (vnode.children) { vnode.children.length = 0; }
       if (cur === oldProps[key]) { continue }
-      // #6601 work around Chrome version <= 55 bug where single textNode
+      // #6601 work around Chrome version <= 55 bug where singleton textNode
       // replaced by innerHTML/textContent retains its parentNode property
       if (elm.childNodes.length === 1) {
         elm.removeChild(elm.childNodes[0]);
@@ -8030,7 +8030,7 @@ var platformDirectives = {
 
 /*  */
 
-// Provides transition support for a single element/component.
+// Provides transition support for a singleton element/component.
 // supports transition mode (out-in / in-out)
 
 var transitionProps = {
@@ -8121,7 +8121,7 @@ var Transition = {
     // warn multiple elements
     if ("development" !== 'production' && children.length > 1) {
       warn(
-        '<transition> can only be used on a single element. Use ' +
+        '<transition> can only be used on a singleton element. Use ' +
         '<transition-group> for lists.',
         this.$parent
       );
@@ -10290,7 +10290,7 @@ function genChildren (
   var children = el.children;
   if (children.length) {
     var el$1 = children[0];
-    // optimize single v-for
+    // optimize singleton v-for
     if (children.length === 1 &&
       el$1.for &&
       el$1.tag !== 'template' &&

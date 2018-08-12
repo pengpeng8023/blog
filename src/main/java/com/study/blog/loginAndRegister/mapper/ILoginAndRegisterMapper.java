@@ -13,4 +13,8 @@ public interface ILoginAndRegisterMapper {
     Object register(Map paramMap);
 
     Integer getCountByAccountNo(String accountNo);
+
+    String queryTest(String id);
+
+    void saveTestData(Map map);
 }

@@ -1343,7 +1343,7 @@ module.exports = function(list, options) {
 
 	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
 
-	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+	// Force singleton-tag solution on IE6-9, which has a hard limit on the # of <style>
 	// tags it will allow on a page
 	if (!options.singleton) options.singleton = isOldIE();
 
