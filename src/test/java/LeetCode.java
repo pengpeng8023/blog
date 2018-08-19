@@ -487,6 +487,96 @@ public class LeetCode {
         }
         return maxArea;
     }
+    /*转置矩阵*/
+    public int[][] transpose(int[][] A) {
+
+        List<List<Integer>> list = new ArrayList<>();
+        int[] a = new int[]{};
+        for (int i = 0; i < A.length; i++) {
+            for (int j = 0; j < A[i].length; j++) {
+                if(list.size()<=j){
+                    list.add(new ArrayList());
+                }
+                list.get(j).add(A[i][j]);
+            }
+        }
+        int[][] arr = new int[list.size()][list.get(0).size()];
+        for (int i = 0; i < list.size(); i++) {
+            for (int j = 0; j < list.get(i).size(); j++) {
+                arr[i][j] = list.get(i).get(j);
+            }
+        }
+        return arr;
+    }
+    /*图片反转*/
+    public int[][] flipAndInvertImage(int[][] A) {
+        int[][] arrs = new int[A.length][A[0].length];
+        for (int i = 0; i < A.length; i++) {
+            for (int j = 0; j < A[i].length; j++) {
+                arrs[i][j] = 1-A[i][A[i].length-j-1];
+            }
+        }
+        return arrs;
+    }
+    /* 回文素数 */
+    public int primePalindrome(int N) {
+        while(N < Integer.MAX_VALUE){
+            if (N==1) {
+                N++;
+                continue;
+            }
+            if (N == 2){
+                return N;
+            }
+            /*找寻下一个回文数*/
+            String n = N+"";
+            int l = n.length();
+            List<Integer> cands = new LinkedList<>();
+            int half = Integer.valueOf(n.substring(0, (l + 1) / 2));
+            for (int i = half; i <= half + 1; i++) {
+                String halfString = "" + i;
+                if (l % 2 == 1) {
+                    halfString = halfString.substring(0, halfString.length() - 1);
+                }
+                String newString = "" + i + new StringBuilder(halfString).reverse().toString();
+                cands.add(Integer.valueOf(newString));
+            }
+            int ori = Integer.valueOf(n), result = Integer.MAX_VALUE;
+            for (int cand : cands) {
+                if (cand >= ori && cand < result) {
+                    result = cand;
+                }
+            }
+            N=result;
+
+            /* 判断是否是素数 */
+            Boolean flag = true;
+            for (int i = 2; i * i <= N; i++) {
+                if(N % i == 0){
+                    flag = false;
+                    break;
+                }
+
+            }
+            if (flag){
+                break;
+            }
+            N++;
+        }
+        return N;
+    }
+    /*山脉数组的峰顶索引*/
+    public int peakIndexInMountainArray(int[] A) {
+        int a = A[0];
+        for (int i = 1; i < A.length; i++) {
+            if(A[i] > a){
+                a = A[i];
+            }else{
+                return i-1;
+            }
+        }
+        return 0;
+    }
     @Test
     public void Test01(){
         String arr[] ={"gin", "zen", "gig", "msg"};
@@ -545,6 +635,13 @@ public class LeetCode {
         //System.out.println(islandPerimeter(grid));
         //System.out.println(detectCapitalUse("F"));
         //System.out.println(fenzu("pot,max,tpo,hi,hide,ih,pot,opt,hide,hdie"));
-        System.out.println(largestTriangleArea(new int[][]{{0,0},{0,1},{1,0}}));
+        //System.out.println(largestTriangleArea(new int[][]{{0,0},{0,1},{1,0}}));
+
+        //System.out.println(transpose(new int[][]{{1,2},{3,4},{5,6}}));
+//        Long t = System.currentTimeMillis();
+//        System.out.println(primePalindrome(9989900));
+//        System.out.println(System.currentTimeMillis()-t);
+//        System.out.println(flipAndInvertImage(new int[][]{{1,1,0,0},{1,0,0,1},{0,1,1,1},{1,0,1,0}}));
+        System.out.println(peakIndexInMountainArray(new int[]{1,2,3,4,5,2,1}));
     }
 }
