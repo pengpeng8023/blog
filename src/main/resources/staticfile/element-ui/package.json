@@ -10,7 +10,7 @@
         "spec": "2.0.5",
         "type": "version"
       },
-      "E:\\workLongshine\\DataIDE\\Project\\view\\ide-project"
+      "E:\\work\\project"
     ]
   ],
   "_from": "element-ui@2.0.5",
@@ -45,7 +45,7 @@
   "_shasum": "e001cb3514d8303a54f2b7d893b916acfc9ac57d",
   "_shrinkwrap": null,
   "_spec": "element-ui@2.0.5",
-  "_where": "E:\\workLongshine\\DataIDE\\Project\\view\\ide-project",
+  "_where": "E:\\work\\project",
   "bugs": {
     "url": "https://github.com/ElemeFE/element/issues"
   },
